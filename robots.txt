@@ -1,0 +1,6 @@
+Robots.txt can be used to stop search engines crawling your pages. Learn more at http://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Disallow:
+
+

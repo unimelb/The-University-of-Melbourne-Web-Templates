@@ -1,0 +1,25 @@
+/* Colour definitions */
+$uniblue        :   #0d3067;
+$darkbluetext   :   #003468;
+$lightbluetext  :   #6685A4;
+$darkestblue    :   #002040;
+$blockquote     :   #dfe9f4;
+$blockquotetext :   #3e658e;
+$lightgrey      :   #f2f2f2;
+$darkgrey       :   #a9a9a9;
+$teal           :   #006867;
+$green          :   #116900;
+$magenta        :   #680000;
+$purple         :   #690069;
+$white          :   #ffffff;
+
+@mixin shadow { -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.3); -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.3); box-shadow: 5px 5px 15px rgba(0,0,0,0.3); }
+@mixin smlshadow { -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.3); -moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.3); box-shadow: 2px 2px 3px rgba(0,0,0,0.3); }
+@mixin border-radius { -moz-border-radius: 3px; border-radius: 3px; }
+
+@mixin transition {  -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+
+@mixin polaroid { @include smlshadow;
+  background: #fff; padding: 5px !important; border: 1px solid $lightgrey; margin-left: -6px !important; margin-right: -6px !important; }
+
+/*@mixin textshadow ($color,) { filter: dropshadow(color=$color, offx=1, offy=1); text-shadow: 1px 1px 2px $color;}*/

@@ -1,0 +1,14 @@
+package_path: /package/ 
+gzip_assets: off
+ 
+javascripts:
+  complete:
+    - lib/jquery-1.6.min.js
+    - js/standard.js
+    - js/navigation.js
+    - lib/standard/feed.js
+
+stylesheets:
+  complete:
+    - css/style.css
+    - css/2011.css  

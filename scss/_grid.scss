@@ -1,0 +1,73 @@
+/*
+
+  Usage
+  -----
+  In your main scss file, add the following three lines.
+    $show-grid: true;
+    $container-id: container;
+    @import "grid";
+
+  To hide the grid background and borders, change the first line to
+    $show-grid: false;
+  
+  Then you get a series of classes named .col-1, .col-2, .col-3, etc. which you can use in your markup
+
+*/
+@import "variables";
+
+$column-count: 8;
+$gutter-width: 20px;
+$container-width: 940px + $gutter-width;
+$column-width: ($container-width / $column-count) - $gutter-width;
+
+@mixin visible_grid {
+  outline: 2px solid rgba(0, 0, 255, 0.2);
+
+  background-image: -webkit-gradient(linear, left center, right center,
+    from(rgba(0,0,0,0)),
+    color-stop(100% - ((($container-width / $column-count) - $gutter-width) / ($gutter-width + (($container-width / $column-count) - $gutter-width)) * 100%), rgba(0,0,0,0)),
+    color-stop(100% - ((($container-width / $column-count) - $gutter-width) / ($gutter-width + (($container-width / $column-count) - $gutter-width)) * 100%), rgba(255,0,0,0.2)),
+    to(rgba(255,0,0,0.2))
+  );
+  -webkit-background-size: $container-width / $column-count;
+
+  background-image: -moz-repeating-linear-gradient(center left,
+    transparent,
+    transparent (1 - ((($container-width / $column-count) - $gutter-width) / ($gutter-width + (($container-width / $column-count) - $gutter-width)))) * ($container-width / $column-count),
+    rgba(255,0,0,0.2) (1 - ((($container-width / $column-count) - $gutter-width) / ($gutter-width + (($container-width / $column-count) - $gutter-width)))) * ($container-width / $column-count),
+    rgba(255,0,0,0.2) $container-width / $column-count
+  );
+}
+
+@mixin column($count: 1) {
+  width: (($column-width + $gutter-width) * $count) - $gutter-width;
+  margin-left: $gutter-width;
+  display: block;
+  float: left;
+  display: inline;
+  @if $show-grid != false {
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+  }
+}
+
+@for $i from 1 through $column-count {
+  .col-#{$i} { @include column($i); }
+}
+@for $i from 1 through $column-count {
+  .push-#{$i} { margin-left: (($column-width + $gutter-width) * $i) + $gutter-width; }
+}
+
+.first { margin-left: 0px; }
+.colborder { padding-right: 9px; margin-right: -11px; border-right: 1px solid #EDEDED; }
+
+.wrapper {
+  width: $container-width;
+  padding-right: $gutter-width;
+  @if $show_grid != false {
+    @include visible_grid;
+  }
+}
+
+.show-grid {
+  @include visible_grid;
+}
