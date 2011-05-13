@@ -292,12 +292,13 @@ a.document em { display: inline; color: #DFE8F3; padding-left: 7px; font-size: 1
 .polaroid { @include polaroid; }
 
 .pullout { @include border-radius;
-  font-family: 'Droid Sans', sans-serif; background: $blockquote; color: $blockquotetext; margin: 10px 0px; padding: 0px 0px 0px 15px; position: relative; left: -15px; }
+  font-family: 'Droid Sans', sans-serif; background: $blockquote; color: $blockquotetext; margin: 10px 0px; padding: 0px 0px 0px 7px; position: relative; left: -5px; }
 .pullout ul { list-style: none; padding: 5px 0px 0px; }
 .pullout ul li { position: relative; }
 .pullout ul li:before { content: "›"; position: absolute; left: 3px; }
 .pullout ul li a { font-size: 14px; color: #7987A7; border: 0px; padding: 0px 0px 0px 17px; }
 .pullout ul li a strong { color: #314778; }
+blockquote.pullout { padding: 0px 0px 0px 15px; position: relative; left: -15px; }
 
 /*  Backgrounds  */
 body.home { background: url("/images/backgrounds/homepage-blue.jpg") top center repeat-x; }

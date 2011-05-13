@@ -1317,9 +1317,9 @@ a.document em {
   background: #dfe9f4;
   color: #3e658e;
   margin: 10px 0px;
-  padding: 0px 0px 0px 15px;
+  padding: 0px 0px 0px 7px;
   position: relative;
-  left: -15px; }
+  left: -5px; }
 
 .pullout ul {
   list-style: none;
@@ -1341,6 +1341,11 @@ a.document em {
 
 .pullout ul li a strong {
   color: #314778; }
+
+blockquote.pullout {
+  padding: 0px 0px 0px 15px;
+  position: relative;
+  left: -15px; }
 
 /*  Backgrounds  */
 body.home {
