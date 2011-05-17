@@ -1,6 +1,6 @@
 /* Colour definitions */
-$uniblue        :   #0d3067;
-$darkbluetext   :   #003468;
+$uniblue        :   #036;
+$darkbluetext   :   #036;
 $lightbluetext  :   #6685A4;
 $darkestblue    :   #002040;
 $blockquote     :   #dfe9f4;
@@ -13,13 +13,24 @@ $magenta        :   #680000;
 $purple         :   #690069;
 $white          :   #ffffff;
 
-@mixin shadow { -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.3); -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.3); box-shadow: 5px 5px 15px rgba(0,0,0,0.3); }
-@mixin smlshadow { -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.3); -moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.3); box-shadow: 2px 2px 3px rgba(0,0,0,0.3); }
-@mixin border-radius { -moz-border-radius: 3px; border-radius: 3px; }
+@mixin border-radius($radius: 3px) {
+  border-radius: $radius; -webkit-border-radius: $radius; -moz-border-radius: $radius; -o-border-radius: $radius; }
 
-@mixin transition {  -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+@mixin text-shadow($x: 1px, $y: 1px, $blur: 0px, $colour: rgba(0, 0, 0, 0.3)) {
+  text-shadow: $x $y $blur $colour; -webkit-text-shadow: $x $y $blur $colour; -moz-text-shadow: $x $y $blur $colour; -o-text-shadow: $x $y $blur $colour; }
 
-@mixin polaroid { @include smlshadow;
+@mixin box-shadow($x: 2px, $y: 2px, $blur: 4px, $colour: rgba(0, 0, 0, 0.2)) {
+  box-shadow: $x $y $blur $colour; -webkit-box-shadow: $x $y $blur $colour; -moz-box-shadow: $x $y $blur $colour; -o-box-shadow: $x $y $blur $colour; }
+
+@mixin inset-box-shadow($x: 2px, $y: 2px, $blur: 4px, $colour: rgba(0, 0, 0, 0.2)) {
+  box-shadow: inset $x $y $blur $colour; -webkit-box-shadow: inset $x $y $blur $colour; -moz-box-shadow: inset $x $y $blur $colour; -o-box-shadow: inset $x $y $blur $colour; }
+
+@mixin transition($prop, $time, $transition: linear) {
+  -webkit-transition: $prop $time $transition; -moz-transition: $prop $time $transition; transition: $prop $time $transition; }
+
+@mixin ttb-gradient($from, $to) {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($from), to($to)); background-image: -moz-linear-gradient(top, $from, $to); }
+
+@mixin polaroid {
+  @include smlshadow;
   background: #fff; padding: 5px !important; border: 1px solid $lightgrey; margin-left: -6px !important; margin-right: -6px !important; }
-
-/*@mixin textshadow ($color,) { filter: dropshadow(color=$color, offx=1, offy=1); text-shadow: 1px 1px 2px $color;}*/
