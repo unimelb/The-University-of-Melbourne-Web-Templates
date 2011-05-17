@@ -72,8 +72,11 @@ Navigation = (function() {
   function buildMobileNavigation() {
     var allDivs = document.getElementsByTagName('div'),
         header = getElementByClassName(allDivs, 'header'),
-        nav = getElementByClassName(allDivs, 'nav'),
+        breadcrumbs = document.getElementById('breadcrumbs'),
+        nav = getElementByClassName(allDivs, 'nav') || document.getElementById('menu'),
         ul = nav.getElementsByTagName('ul')[0];
+
+    if (!nav) return;
 
     var html = '<select onchange="document.location.href = options[selectedIndex].value;">',
         list = buildList(ul.childNodes);
@@ -84,7 +87,8 @@ Navigation = (function() {
     var node = document.createElement('div');
     node.setAttribute('class', 'mobile-nav');
     node.innerHTML = '<p>Navigation:</p>'+html;
-    header.appendChild(node);
+    if (!!header) header.appendChild(node);
+    else if (breadcrumbs) breadcrumbs.innerHTML = node.innerHTML;
   }
 
   function toggleNav(e) {
