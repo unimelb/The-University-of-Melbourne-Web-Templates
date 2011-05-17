@@ -120,6 +120,7 @@ def deploy(version)
   upload_directory(version, @standard_lib_path, "lib/standard")
    
   upload_file(version, "js", "public/package/complete.js")
+  upload_file(version, "js", "public/package/widgets.js")
   upload_file(version, "css", "public/package/complete.css")
 
   puts "#{version} deployed"
