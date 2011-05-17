@@ -2,16 +2,14 @@
 $uniblue        :   #036;
 $darkbluetext   :   #036;
 $lightbluetext  :   #6685A4;
-$darkestblue    :   #002040;
+$darkestblue    :   #024;
+$highlightred   :   #c33;
 $blockquote     :   #dfe9f4;
 $blockquotetext :   #3e658e;
+
 $lightgrey      :   #f2f2f2;
 $darkgrey       :   #a9a9a9;
-$teal           :   #006867;
-$green          :   #116900;
-$magenta        :   #680000;
-$purple         :   #690069;
-$white          :   #ffffff;
+
 
 @mixin border-radius($radius: 3px) {
   border-radius: $radius; -webkit-border-radius: $radius; -moz-border-radius: $radius; -o-border-radius: $radius; }
@@ -29,8 +27,8 @@ $white          :   #ffffff;
   -webkit-transition: $prop $time $transition; -moz-transition: $prop $time $transition; transition: $prop $time $transition; }
 
 @mixin ttb-gradient($from, $to) {
+  background-color: $to;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from($from), to($to)); background-image: -moz-linear-gradient(top, $from, $to); }
 
 @mixin polaroid {
-  @include smlshadow;
   background: #fff; padding: 5px !important; border: 1px solid $lightgrey; margin-left: -6px !important; margin-right: -6px !important; }

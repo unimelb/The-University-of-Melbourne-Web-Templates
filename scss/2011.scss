@@ -45,7 +45,7 @@ pre { margin: 5px 0px 10px; padding: 0px; overflow-x: auto;
 a { text-decoration: none;
   &:hover {
     @include transition(color, 300ms, linear);
-    color: #c33; } }
+    color: $highlightred; } }
 .main a { border-bottom: 1px solid; }
   
 /*  List styles */
@@ -106,7 +106,7 @@ input[type=submit] {
   @include box-shadow;
   @include text-shadow;
   @include ttb-gradient(#446791, #164682);
-  width: auto; padding: 9px 18px 8px; margin: 10px 10px 0px 0px; background: #00438d; color: #fff; border: 0px; vertical-align: middle; }
+  width: auto; padding: 9px 18px 8px; margin: 10px 10px 0px 0px; color: #fff; border: 0px; vertical-align: middle; }
 form button:active,
 input[type=submit]:active,
 .button:active {
@@ -118,7 +118,7 @@ input[type=submit]:active,
 .message p { text-align: left; padding: 0px; }
 .message ul { list-style: decimal outside; }
 .error { color: #600; background: #ffe6e5 url('../images/error-bg.png') 2% 50% no-repeat; border: 1px solid #f99; }
-.alert { color: #0b376e; background: #fafcff url('../images/alert-bg.png') 2% 50% no-repeat; border: 1px solid #b9cfe7; }
+.alert { color: $darkestblue; background: #fafcff url('../images/alert-bg.png') 2% 50% no-repeat; border: 1px solid #b9cfe7; }
 
 /*  Navigation styles */
 .nav { float: right; margin-top: 20px; }
@@ -128,11 +128,11 @@ input[type=submit]:active,
 .nav ul li { margin: 12px 0px 0px; font-size: 14px; font-weight: bold; font-family: 'Droid Sans', sans-serif; color: $darkbluetext; line-height: 1.3; }
 
 .nav ul li a { color: $darkbluetext; border-bottom: none; display: block; }
-.nav ul li a:hover { border: 0px; color: #c33; }
+.nav ul li a:hover { border: 0px; color: $highlightred; }
 .nav ul li ul { margin: 4px 0px 0px; padding: 0px; }
 .nav ul li ul li { position: relative; margin: 0px 0px 2px; border-top: 1px solid $blockquote; padding: 8px 1px 4px 0px; color: $blockquotetext; font-size: 13px; font-family: sans-serif; font-weight: normal; }
 .nav ul li ul li a { color: $blockquotetext; border-bottom:none;}
-.nav ul li ul li a:hover { color: #c33; }
+.nav ul li ul li a:hover { color: $highlightred; }
 .nav ul li ul li ul { padding: 0px 0px 5px; margin-top: 8px; margin-bottom: -6px; background: $blockquote; }
 .nav ul li ul li ul li { padding-bottom: 0px; padding-left: 10px; }
 .nav ul li ul li.open ul li a,
@@ -155,7 +155,7 @@ input[type=submit]:active,
   @include transition(background, 100ms, linear);
   @include border-radius(4px);
   position: absolute; top: 6px; right: 0px; background: $blockquote; padding: 3px 18px 2px 8px; font-size: 11px; }
-.nav ul li .more:hover { background: #9ab8d6; color: $blockquotetext; }
+.nav ul li .more:hover { background: darken($blockquote, 10%); color: $blockquotetext; }
 .nav ul li .more:after { position: absolute; right: 6px; top: 8px; content: ' '; width: 0px; height: 0px; border: 4px solid transparent; border-bottom: 0px; border-top: 4px solid $blockquotetext; }
 .nav ul li.open .more:after { border: 4px solid transparent; border-top: 0px; border-bottom: 4px solid $blockquotetext; }
 
@@ -175,7 +175,7 @@ blockquote {
 blockquote p { padding: 13px 28px 0px 18px; margin: 0px 0px 10px; text-indent: 34px; }
 blockquote a { float: right; position: relative; top: -15px; right: 15px; color:$darkbluetext; font-weight: normal; font-size: 14px; clear:both; margin-top: 10px; border: 0px; }
 blockquote.opening-hours { margin-top: 10px; background: $blockquote url("../images/opening_hours.png") no-repeat 12px 12px; }
-blockquote.opening-hours { font-family: sans-serif; font-size: 12px; font-weight: normal; color: #183851; }
+blockquote.opening-hours { font-family: sans-serif; font-size: 12px; font-weight: normal; color: $blockquotetext; }
 blockquote.opening-hours p { padding: 13px 13px 13px 43px; text-indent: 0px; }
 
 /*  Footer styles */
@@ -215,8 +215,8 @@ a.button {
   @include border-radius(4px);
   @include text-shadow;
   @include transition(all, 300ms, linear);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#446791), to(#164682)); background-image: -moz-linear-gradient(top,  #446791,  #164682);
-  display: inline-block; padding: 5px 14px 4px; margin: 5px 5px 10px 0px; background: #446791; color: #fff; border: 0px; vertical-align: middle; float: left; }
+  @include ttb-gradient(#446791, #164682);
+  display: inline-block; padding: 5px 14px 4px; margin: 5px 5px 10px 0px; color: #fff; border: 0px; vertical-align: middle; float: left; }
 a.button,
 a.button:visited { color: #fff; border: 0px; border: 0px; }
 a.button:after { content: "›"; font-family: trebuchet; font-size: 1.7em; font-weight: bold; margin: 0px 0px 0px 12px; line-height: 0.5; color: $lightbluetext; }
@@ -228,38 +228,38 @@ a.button:hover {
 a.icon {
   @include border-radius(4px);
   @include transition(background, 100ms, linear);
-  display: inline-block; background: #2e3269; border: 0px; padding: 8px 14px 8px 36px; margin: 12px 0px; color: #fff; font-family: 'Droid Sans', sans-serif; font-size: 13px; font-weight: bold;
-  &:hover { background-color: #58728D; } }
-a.document { position: relative; background: #2e3269 url('../images/icon-document-small.png') center left no-repeat; }
+  display: inline-block; background: $uniblue; border: 0px; padding: 8px 14px 8px 36px; margin: 12px 0px; color: #fff; font-family: 'Droid Sans', sans-serif; font-size: 13px; font-weight: bold;
+  &:hover { background-color: $blockquotetext; } }
+a.document { position: relative; background: $uniblue url('../images/icon-document-small.png') center left no-repeat; }
 a.document:before { content:attr(rel); position: absolute; top: 50%; left: 21px; font-size: 8px; margin-top: 4px; line-height: 8px; text-transform: uppercase; }
-a.media { background: #2e3269 url('../images/icon-media-small.png') center left no-repeat; }
-a.rss { background: #2e3269 url('../images/icon-rss-small.png') center left no-repeat; }
-a.twitter { background: #2e3269 url('../images/icon-twitter-small.png') center left no-repeat; }
-a.facebook { background: #2e3269 url('../images/icon-facebook-small.png') center left no-repeat; }
+a.media { background: $uniblue url('../images/icon-media-small.png') center left no-repeat; }
+a.rss { background: $uniblue url('../images/icon-rss-small.png') center left no-repeat; }
+a.twitter { background: $uniblue url('../images/icon-twitter-small.png') center left no-repeat; }
+a.facebook { background: $uniblue url('../images/icon-facebook-small.png') center left no-repeat; }
 
 a.large { font-size: 16px; padding: 18px 22px 18px 68px; }
-a.media.large { background: #2e3269 url('../images/icon-media.png') center left no-repeat;
-  &:hover { background-color: #58728D; } }
-a.document.large { background: #2e3269 url('../images/icon-document.png') center left no-repeat;
-  &:hover { background-color: #58728D; } }
+a.media.large { background: $uniblue url('../images/icon-media.png') center left no-repeat;
+  &:hover { background-color: $blockquotetext; } }
+a.document.large { background: $uniblue url('../images/icon-document.png') center left no-repeat;
+  &:hover { background-color: $blockquotetext; } }
 
 a.media em,
 a.document em,
 a.media strong,
-a.document strong { display: block; color: #BDD1E5; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+a.document strong { display: block; color: $blockquote; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
 a.media em,
-a.document em { display: inline; color: #DFE8F3; padding-left: 7px; font-size: 12px; font-style: normal; letter-spacing: 0px; text-transform: lowercase; }
+a.document em { display: inline; color: $blockquote; padding-left: 7px; font-size: 12px; font-style: normal; letter-spacing: 0px; text-transform: lowercase; }
 
 
 /*  Heading styles  */
 .header { margin: 0px 0px 26px; overflow: hidden; }
 .header hr { visibility: hidden; margin: 0px; padding: 0px; height: 0px; overflow: hidden; border: 0px; }
 .header a.logo {
-  @include shadow;
+  @include box-shadow;
   float: left; position: absolute; z-index: 10000; top: 25px; background: $uniblue url("../images/uom_logo.gif") no-repeat 15px 15px; width: 130px; height: 130px; display: block; }
 .header .hgroup { margin: -2px 0px 0px 145px; display: block; position: relative; }
 .header .hgroup h1 {
-  @include text-shadow(1px, 1px, 2px, #0d3067);
+  @include text-shadow(1px, 1px, 2px, $darkestblue);
   padding: 40px 0px 12px; font-size: 33px; color: #fff; line-height: 1; }
 
 .header .hgroup h1 a { color: #fff; }
@@ -267,16 +267,16 @@ a.document em { display: inline; color: #DFE8F3; padding-left: 7px; font-size: 1
 .header .hgroup h2 a,
 .header .hgroup h2 a:hover,
 .header .hgroup h2 a:visited {
-  @include text-shadow(1px, 1px, 2px, #0d3067);
+  @include text-shadow(1px, 1px, 2px, $uniblue);
   text-decoration: none; font-size: 17px; color: #fff; font-weight: normal; line-height: 1; }
 
 .header #headingtext { clear: left; padding-top: 20px; margin-top:20px; }
 .header #headingtext p {
-  @include text-shadow(1px, 1px, 2px, #0d3067);
-  font-family: 'Droid Sans', sans-serif; color: lighten($lightbluetext, 20%); font-size: 21px; line-height: 1.3; margin-left: 20px; }
+  @include text-shadow(1px, 1px, 2px, $uniblue);
+  font-family: 'Droid Sans', sans-serif; color: darken($blockquote, 10%); font-size: 21px; line-height: 1.3; margin-left: 20px; }
 .header #headingtext h1 {
-  @include text-shadow(1px, 1px, 2px, #0d3067);
-  color: lighten($lightbluetext, 20%); padding-top: 3px; line-height: 1.3; }
+  @include text-shadow(1px, 1px, 2px, $uniblue);
+  color: darken($blockquote, 10%); padding-top: 3px; line-height: 1.3; }
 .header #headingtext img { width: 210px; margin: -60px 0px 0px; }
 
 /*  Newsbannner styles  */
@@ -287,13 +287,13 @@ a.document em { display: inline; color: #DFE8F3; padding-left: 7px; font-size: 1
 #newsbanner #banner-clip { width: 680px; height: 300px; overflow: hidden; float: left; }
 
 #newsbanner ol { counter-reset: section; font-family: 'Droid Sans', sans-serif; padding-left: 0px; margin: 0px; color: $darkgrey; width: 245px; float: right; list-style: none; }
-#newsbanner ol li { border-bottom: 1px solid darken($lightgrey, 2%); line-height: 1.4; padding-left: 18px; padding-right: 0px; margin: 0px; position: relative;
+#newsbanner ol li { border-bottom: 1px solid darken($lightgrey, 2%); line-height: 1.4; padding-left: 28px; padding-right: 0px; margin: 0px; position: relative;
   &:last-child { border-bottom: none; }
   &:hover,
   &.selected { background: lighten($lightbluetext,44%); color: transparentize($darkbluetext, 0.1); }
   &.selected a,
   &:hover a { color: transparentize($darkbluetext, 0.1); } }
-#newsbanner ol li:before { counter-increment: section; content: counter(section) "."; position: absolute; top: 8px; left: 5px; }
+#newsbanner ol li:before { counter-increment: section; content: counter(section) "."; position: absolute; top: 8px; left: 16px; }
 #newsbanner ol li a { display: block; height: 66px; text-decoration: none; padding: 8px 5px 0px 5px; font-weight: bold; font-size: 14px; color: darken($darkgrey, 10%); }
 
 .banner { position: relative; overflow: hidden; }
@@ -301,7 +301,7 @@ a.document em { display: inline; color: #DFE8F3; padding-left: 7px; font-size: 1
 .banner .banner-text { pointer-events: none; position: absolute; left: 0px; bottom: 0px; width: 100%; background: rgb(49, 71, 120); background: rgba(49, 71, 120, 0.8); padding: 10px 0px; }
 .banner .banner-text h1,
 .banner .banner-text h2 { margin-left: 20px; color: #fff; }
-.banner .banner-text h1 a { font-size: 16px; color: #DFE9F4; border: 0px; }
+.banner .banner-text h1 a { font-size: 16px; color: $blockquote; border: 0px; }
 .banner .banner-text h2 a { font-size: 28px; font-weight: normal; padding: 5px 0px; color: #fff; line-height: 1.3; letter-spacing: 1px; border: 0px; }
 
 .polaroid { @include polaroid; }
@@ -312,8 +312,8 @@ a.document em { display: inline; color: #DFE8F3; padding-left: 7px; font-size: 1
 .pullout ul { list-style: none; padding: 5px 0px 0px; }
 .pullout ul li { position: relative; }
 .pullout ul li:before { content: "›"; position: absolute; left: 3px; }
-.pullout ul li a { font-size: 14px; color: #7987A7; border: 0px; padding: 0px 0px 0px 17px; }
-.pullout ul li a strong { color: #314778; }
+.pullout ul li a { font-size: 14px; color: $blockquotetext; border: 0px; padding: 0px 0px 0px 17px; }
+.pullout ul li a strong { color: $uniblue; }
 blockquote.pullout { padding: 0px 0px 0px 15px; position: relative; left: -15px; }
 
 /*  Backgrounds  */
@@ -336,7 +336,7 @@ body.clouds .hgroup h2 a,
 body.green .headingtext p,
 body.clouds .headingtext p {
   @include text-shadow(1px, 1px, 1px, rgba(255, 255, 255, 0.3));
-  color: #003468; }
+  color: $uniblue; }
 
 
 /*  IE Fixes  */
