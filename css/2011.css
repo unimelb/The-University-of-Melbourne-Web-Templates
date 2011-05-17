@@ -954,12 +954,17 @@ ul.news .timestamp {
 
 .page-preview img {
   margin-top: 10px;
+  margin-bottom: 6px;
   display: block; }
 
 .page-preview h2 {
   font-weight: bold;
   font-size: 18px;
   padding: 0px; }
+
+.page-preview .button {
+  margin-top: 0px;
+  margin-bottom: 26px; }
 
 /*  Visual lists -i.e. lists that aren't simple dot points or ordered lists */
 ul.visual {
