@@ -110,15 +110,14 @@ input[type=submit] {
 form button:active,
 input[type=submit]:active,
 .button:active {
-  @include inset-box-shadow;
-  background: #446791; }
+  @include inset-box-shadow; }
 
 /*  Form messages */
-.message { display: block; background: #f9f9f9 url('../images/message-bg.png') 2% 50% no-repeat; padding: 25px 20px 25px 95px; margin: 0px 0px 20px; border: 1px solid #ccc; }
+.message { display: block; background: #f9f9f9 url('../images/message-bg.png') 2% 50% no-repeat; padding: 25px 20px 25px 95px; margin: 0px 0px 20px; border: 1px solid desaturate(darken(#f9f9f9, 20%), 50%); }
 .message p { text-align: left; padding: 0px; }
 .message ul { list-style: decimal outside; }
-.error { color: #600; background: #ffe6e5 url('../images/error-bg.png') 2% 50% no-repeat; border: 1px solid #f99; }
-.alert { color: $darkestblue; background: #fafcff url('../images/alert-bg.png') 2% 50% no-repeat; border: 1px solid #b9cfe7; }
+.error { color: #600; background: #ffe6e5 url('../images/error-bg.png') 2% 50% no-repeat; border: 1px solid desaturate(darken(#ffe6e5, 20%), 50%); }
+.alert { color: $darkestblue; background: #fafcff url('../images/alert-bg.png') 2% 50% no-repeat; border: 1px solid desaturate(darken(#fafcff, 20%), 50%); }
 
 /*  Navigation styles */
 .nav { float: right; margin-top: 20px; }
