@@ -268,9 +268,9 @@ a.document em { display: inline; color: #DFE8F3; padding-left: 7px; font-size: 1
 
 /*  Newsbannner styles  */
 #newsbanner { @include polaroid;
-  width: 100%; clear: both; overflow: hidden; margin: -10px 0px -15px; }
-#newsbanner .banner { width: 700px; float: left; }
-#newsbanner #banner-clip { width: 700px; height: 300px; overflow: hidden; float: left; }
+  width: 930px; clear: both; overflow: hidden; margin: 0px 0px -15px 15px !important; }
+#newsbanner .banner { width: 680px; float: left; }
+#newsbanner #banner-clip { width: 680px; height: 300px; overflow: hidden; float: left; }
 
 #newsbanner ol { counter-reset: section; font-family: 'Droid Sans', sans-serif; padding-left: 0px; margin: 0px; color: $darkgrey; width: 245px; float: right; list-style: none; }
 #newsbanner ol li { border-bottom: 1px solid darken($lightgrey, 2%); line-height: 1.4; padding-left: 18px; padding-right: 0px; margin: 0px; position: relative;

@@ -1213,17 +1213,17 @@ a.document em {
   border: 1px solid #f2f2f2;
   margin-left: -6px !important;
   margin-right: -6px !important;
-  width: 100%;
+  width: 930px;
   clear: both;
   overflow: hidden;
-  margin: -10px 0px -15px; }
+  margin: 0px 0px -15px 15px !important; }
 
 #newsbanner .banner {
-  width: 700px;
+  width: 680px;
   float: left; }
 
 #newsbanner #banner-clip {
-  width: 700px;
+  width: 680px;
   height: 300px;
   overflow: hidden;
   float: left; }
