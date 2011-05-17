@@ -47,6 +47,9 @@ Navigation = (function() {
 
   }
   // getElementByClassName helper method
+  // This returns a single element from a list of provided nodes
+  // It is worth noting, that standard getElementsByClassName functionality
+  // is not what we need here
   function getElementByClassName(elements, className) {
     var re = new RegExp('(\\s|^)'+className+'(\\s|$)');
     for (var i = 0, ii = elements.length; i < ii; i++) {
