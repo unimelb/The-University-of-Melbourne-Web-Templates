@@ -418,7 +418,7 @@ pre {
     height: 50px;
     background-color: #93b5da;
     -webkit-border-radius: 5px; }
-  pre::-webkit-scrollbar-thumb:vertical:hover {
+  pre::-webkit-scrollbar-thumb:vertical:hover, pre::-webkit-scrollbar-thumb:vertical:focus {
     height: 50px;
     background-color: #6d9bcd;
     -webkit-border-radius: 5px; }
@@ -431,7 +431,7 @@ pre {
 
 a {
   text-decoration: none; }
-  a:hover {
+  a:hover, a:focus {
     -webkit-transition: color 300ms linear;
     -moz-transition: color 300ms linear;
     transition: color 300ms linear;
@@ -677,7 +677,7 @@ input[type=submit]:active,
   border-bottom: none;
   display: block; }
 
-.nav ul li a:hover {
+.nav ul li a:hover, .nav ul li a:focus {
   border: 0px;
   color: #cc3333; }
 
@@ -699,7 +699,7 @@ input[type=submit]:active,
   color: #3e658e;
   border-bottom: none; }
 
-.nav ul li ul li a:hover {
+.nav ul li ul li a:hover, .nav ul li ul li a:focus {
   color: #cc3333; }
 
 .nav ul li ul li ul {
@@ -763,7 +763,7 @@ input[type=submit]:active,
   padding: 3px 18px 2px 8px;
   font-size: 11px; }
 
-.nav ul li .more:hover {
+.nav ul li .more:hover, .nav ul li .more:focus {
   background: #b9cfe7;
   color: #3e658e; }
 
@@ -1022,7 +1022,7 @@ a.button:after {
   line-height: 0.5;
   color: #6685a4; }
 
-a.button:hover {
+a.button:hover, a.button:focus {
   box-shadow: 0px 0px 10px #446791;
   -webkit-box-shadow: 0px 0px 10px #446791;
   -moz-box-shadow: 0px 0px 10px #446791;
@@ -1046,7 +1046,7 @@ a.icon {
   font-family: 'Droid Sans', sans-serif;
   font-size: 13px;
   font-weight: bold; }
-  a.icon:hover {
+  a.icon:hover, a.icon:focus {
     background-color: #3e658e; }
 
 a.document {
@@ -1081,12 +1081,12 @@ a.large {
 
 a.media.large {
   background: #003366 url("../images/icon-media.png") center left no-repeat; }
-  a.media.large:hover {
+  a.media.large:hover, a.media.large:focus {
     background-color: #3e658e; }
 
 a.document.large {
   background: #003366 url("../images/icon-document.png") center left no-repeat; }
-  a.document.large:hover {
+  a.document.large:hover, a.document.large:focus {
     background-color: #3e658e; }
 
 a.media em,
@@ -1163,6 +1163,7 @@ a.document em {
 
 .header .hgroup h2 a,
 .header .hgroup h2 a:hover,
+.header .hgroup h2 a:focus,
 .header .hgroup h2 a:visited {
   text-shadow: 1px 1px 2px #003366;
   -webkit-text-shadow: 1px 1px 2px #003366;
@@ -1244,10 +1245,10 @@ a.document em {
   position: relative; }
   #newsbanner ol li:last-child {
     border-bottom: none; }
-  #newsbanner ol li:hover, #newsbanner ol li.selected {
+  #newsbanner ol li:hover, #newsbanner ol li:focus, #newsbanner ol li.selected {
     background: #f3f5f8;
     color: rgba(0, 51, 102, 0.9); }
-  #newsbanner ol li.selected a, #newsbanner ol li:hover a {
+  #newsbanner ol li.selected a, #newsbanner ol li:hover a, #newsbanner ol li:focus a {
     color: rgba(0, 51, 102, 0.9); }
 
 #newsbanner ol li:before {

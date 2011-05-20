@@ -38,12 +38,12 @@ pre { margin: 5px 0px 10px; padding: 0px; overflow-x: auto;
   &::-webkit-scrollbar { width: 7px; height: 7px; }
   &::-webkit-scrollbar-track-piece { background-color: darken($blockquote, 5%); -webkit-border-radius: 5px; margin: 1px; }
   &::-webkit-scrollbar-thumb:vertical { height: 50px; background-color: darken($blockquote, 20%); -webkit-border-radius: 5px; }
-  &::-webkit-scrollbar-thumb:vertical:hover { height: 50px; background-color: darken($blockquote, 30%); -webkit-border-radius: 5px; }
+  &::-webkit-scrollbar-thumb:vertical:hover, &::-webkit-scrollbar-thumb:vertical:focus { height: 50px; background-color: darken($blockquote, 30%); -webkit-border-radius: 5px; }
   &::-webkit-scrollbar-thumb:horizontal { width: 50px; background-color: darken($blockquote, 20%); -webkit-border-radius: 5px; }
   &::-webkit-scrollbar-corner { background: $lightbluetext; } }
 
 a { text-decoration: none;
-  &:hover {
+  &:hover, &:focus {
     @include transition(color, 300ms, linear);
     color: $highlightred; } }
 .main a { border-bottom: 1px solid; }
@@ -127,11 +127,11 @@ input[type=submit]:active,
 .nav ul li { margin: 12px 0px 0px; font-size: 14px; font-weight: bold; font-family: 'Droid Sans', sans-serif; color: $darkbluetext; line-height: 1.3; }
 
 .nav ul li a { color: $darkbluetext; border-bottom: none; display: block; }
-.nav ul li a:hover { border: 0px; color: $highlightred; }
+.nav ul li a:hover, .nav ul li a:focus { border: 0px; color: $highlightred; }
 .nav ul li ul { margin: 4px 0px 0px; padding: 0px; }
 .nav ul li ul li { position: relative; margin: 0px 0px 2px; border-top: 1px solid $blockquote; padding: 8px 1px 4px 0px; color: $blockquotetext; font-size: 13px; font-family: sans-serif; font-weight: normal; }
 .nav ul li ul li a { color: $blockquotetext; border-bottom:none;}
-.nav ul li ul li a:hover { color: $highlightred; }
+.nav ul li ul li a:hover, .nav ul li ul li a:focus { color: $highlightred; }
 .nav ul li ul li ul { padding: 0px 0px 5px; margin-top: 8px; margin-bottom: -6px; background: $blockquote; }
 .nav ul li ul li ul li { padding-bottom: 0px; padding-left: 10px; }
 .nav ul li ul li.open ul li a,
@@ -154,7 +154,7 @@ input[type=submit]:active,
   @include transition(background, 100ms, linear);
   @include border-radius(4px);
   position: absolute; top: 6px; right: 0px; background: $blockquote; padding: 3px 18px 2px 8px; font-size: 11px; }
-.nav ul li .more:hover { background: darken($blockquote, 10%); color: $blockquotetext; }
+.nav ul li .more:hover, .nav ul li .more:focus { background: darken($blockquote, 10%); color: $blockquotetext; }
 .nav ul li .more:after { position: absolute; right: 6px; top: 8px; content: ' '; width: 0px; height: 0px; border: 4px solid transparent; border-bottom: 0px; border-top: 4px solid $blockquotetext; }
 .nav ul li.open .more:after { border: 4px solid transparent; border-top: 0px; border-bottom: 4px solid $blockquotetext; }
 
@@ -219,7 +219,7 @@ a.button {
 a.button,
 a.button:visited { color: #fff; border: 0px; border: 0px; }
 a.button:after { content: "›"; font-family: trebuchet; font-size: 1.7em; font-weight: bold; margin: 0px 0px 0px 12px; line-height: 0.5; color: $lightbluetext; }
-a.button:hover {
+a.button:hover, a.button:focus {
   @include box-shadow(0px, 0px, 10px, rgba(68, 103, 145, 1)); }
 
 /*  Document/asset links  */
@@ -228,7 +228,7 @@ a.icon {
   @include border-radius(4px);
   @include transition(background, 100ms, linear);
   display: inline-block; background: $uniblue; border: 0px; padding: 8px 14px 8px 36px; margin: 12px 0px; color: #fff; font-family: 'Droid Sans', sans-serif; font-size: 13px; font-weight: bold;
-  &:hover { background-color: $blockquotetext; } }
+  &:hover, &:focus { background-color: $blockquotetext; } }
 a.document { position: relative; background: $uniblue url('../images/icon-document-small.png') center left no-repeat; }
 a.document:before { content:attr(rel); position: absolute; top: 50%; left: 21px; font-size: 8px; margin-top: 4px; line-height: 8px; text-transform: uppercase; }
 a.media { background: $uniblue url('../images/icon-media-small.png') center left no-repeat; }
@@ -238,9 +238,9 @@ a.facebook { background: $uniblue url('../images/icon-facebook-small.png') cente
 
 a.large { font-size: 16px; padding: 18px 22px 18px 68px; }
 a.media.large { background: $uniblue url('../images/icon-media.png') center left no-repeat;
-  &:hover { background-color: $blockquotetext; } }
+  &:hover, &:focus { background-color: $blockquotetext; } }
 a.document.large { background: $uniblue url('../images/icon-document.png') center left no-repeat;
-  &:hover { background-color: $blockquotetext; } }
+  &:hover, &:focus { background-color: $blockquotetext; } }
 
 a.media em,
 a.document em,
@@ -264,7 +264,8 @@ a.document em { display: inline; color: $blockquote; padding-left: 7px; font-siz
 .header .hgroup h1 a { color: #fff; }
 .header .hgroup h2 { position: absolute; top: 1px; font-size: 17px; font-weight: bold; white-space: nowrap; }
 .header .hgroup h2 a,
-.header .hgroup h2 a:hover,
+.header .hgroup h2 a:hover, 
+.header .hgroup h2 a:focus,
 .header .hgroup h2 a:visited {
   @include text-shadow(1px, 1px, 2px, $uniblue);
   text-decoration: none; font-size: 17px; color: #fff; font-weight: normal; line-height: 1; }
@@ -289,9 +290,10 @@ a.document em { display: inline; color: $blockquote; padding-left: 7px; font-siz
 #newsbanner ol li { border-bottom: 1px solid darken($lightgrey, 2%); line-height: 1.4; padding-left: 28px; padding-right: 0px; margin: 0px; position: relative;
   &:last-child { border-bottom: none; }
   &:hover,
+  &:focus,
   &.selected { background: lighten($lightbluetext,44%); color: transparentize($darkbluetext, 0.1); }
   &.selected a,
-  &:hover a { color: transparentize($darkbluetext, 0.1); } }
+  &:hover a, &:focus a { color: transparentize($darkbluetext, 0.1); } }
 #newsbanner ol li:before { counter-increment: section; content: counter(section) "."; position: absolute; top: 8px; left: 16px; }
 #newsbanner ol li a { display: block; height: 66px; text-decoration: none; padding: 8px 5px 0px 5px; font-weight: bold; font-size: 14px; color: darken($darkgrey, 10%); }
 
