@@ -1318,7 +1318,8 @@ a.document em {
   font-family: 'Droid Sans', sans-serif;
   background: #dfe9f4;
   color: #3e658e;
-  margin: 10px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 0px 0px 0px 7px;
   position: relative;
   left: -5px; }
@@ -1345,9 +1346,9 @@ a.document em {
   color: #003366; }
 
 blockquote.pullout {
-  padding: 0px 0px 0px 15px;
-  position: relative;
-  left: -15px; }
+  background: #dfe9f4 url("../images/quote_marks.png") no-repeat 18px 14px;
+  padding: 0px;
+  margin-top: 0px; }
 
 /*  Backgrounds  */
 body.home {
