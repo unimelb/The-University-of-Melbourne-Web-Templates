@@ -319,23 +319,32 @@ blockquote.pullout { background: $blockquote url("../images/quote_marks.png") no
 
 /*  Backgrounds  */
 body.home { background: url("../images/backgrounds/homepage-blue.jpg") top center repeat-x; }
+body.science-home { background: url("../images/backgrounds/science-home.jpg") top center repeat-x; }
+body.yellow-home { background: url("../images/backgrounds/yellow-home.jpg") top center repeat-x; }
+body.green-home { background: url("../images/backgrounds/green-home.jpg") top center repeat-x; }
 
-body.clouds { background: url("../images/backgrounds/clouds.jpg") top center repeat-x; }
-body.green { background: url("../images/backgrounds/green.jpg") top center repeat-x; }
 body.blue { background: url("../images/backgrounds/blue.jpg") top center repeat-x; }
-body.blue-green { background: url("../images/backgrounds/blue-green.jpg") top center repeat-x; }
 body.science { background: url("../images/backgrounds/science.jpg") top center repeat-x; }
-body.music { background: url("../images/backgrounds/music.jpg") top center repeat-x; }
-body.textiles { background: url("../images/backgrounds/textiles.jpg") top center repeat-x; }
+body.yellow { background: url("../images/backgrounds/yellow.jpg") top center repeat-x; }
+body.green { background: url("../images/backgrounds/green.jpg") top center repeat-x; }
+body.clouds { background: url("../images/backgrounds/clouds.jpg") top center repeat-x; }
 
-body.green .hgroup h1,
-body.green .hgroup h1 a,
-body.green .hgroup h2 a,
+
 body.clouds .hgroup h1,
 body.clouds .hgroup h1 a,
 body.clouds .hgroup h2 a, 
-body.green .headingtext p,
-body.clouds .headingtext p {
+body.clouds #headingtext h1,
+body.clouds #headingtext p,
+body.yellow .hgroup h1,
+body.yellow .hgroup h1 a,
+body.yellow .hgroup h2 a, 
+body.yellow #headingtext h1,
+body.yellow #headingtext p,
+body.yellow-home .hgroup h1,
+body.yellow-home .hgroup h1 a,
+body.yellow-home .hgroup h2 a, 
+body.yellow-home #headingtext h1,
+body.yellow-home #headingtext p {
   @include text-shadow(1px, 1px, 1px, rgba(255, 255, 255, 0.3));
   color: $uniblue; }
 
