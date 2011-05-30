@@ -1218,12 +1218,13 @@ a.document em {
 
 #newsbanner .banner {
   width: 680px;
-  float: left; }
+  height: 300px; }
 
 #newsbanner #banner-clip {
   width: 680px;
   height: 300px;
   overflow: hidden;
+  position: relative;
   float: left; }
 
 #newsbanner ol {
@@ -1275,14 +1276,14 @@ a.document em {
   display: block; }
 
 .banner .banner-text {
-  pointer-events: none;
   position: absolute;
   left: 0px;
   bottom: 0px;
   width: 100%;
   background: #314778;
   background: rgba(49, 71, 120, 0.8);
-  padding: 10px 0px; }
+  padding: 10px 0px;
+  pointer-events: none; }
 
 .banner .banner-text h1,
 .banner .banner-text h2 {
