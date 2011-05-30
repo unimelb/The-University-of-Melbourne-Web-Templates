@@ -350,6 +350,7 @@ body.yellow-home #headingtext p {
 
 
 /*  IE Fixes  */
+.header .hgroup h2 { *top: 8px; }
 .main { *background: none; }
 .pullout { *padding: 0px; *left: 0px; }
 .pullout ul li a { *padding: 0px; }
