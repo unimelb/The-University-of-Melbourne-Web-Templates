@@ -160,7 +160,7 @@ Navigation = (function() {
     a.setAttribute('className', 'more');
     a.setAttribute('href', '#');
     a.appendChild(text);
-    li.appendChild(a);
+    li.insertBefore(a, li.firstChild);
   }
 
 })();
