@@ -861,7 +861,7 @@ blockquote.opening-hours p {
   margin: 30px 0px -24px;
   padding: 30px 0px;
   clear: both;
-  color: #a9a9a9;
+  color: #686868;
   background: #f2f2f2;
   line-height: 1.6em; }
 
@@ -869,10 +869,10 @@ blockquote.opening-hours p {
   clear: both;
   font-size: 20px;
   margin: 0px 0px 14px 20px;
-  color: #a9a9a9; }
+  color: #686868; }
 
 .footer h2 {
-  color: #a9a9a9;
+  color: #686868;
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
@@ -880,7 +880,7 @@ blockquote.opening-hours p {
   font-size: 13px; }
 
 .footer a {
-  color: #a9a9a9; }
+  color: #686868; }
 
 .footer ul {
   margin-top: 0px;
@@ -907,7 +907,7 @@ blockquote.opening-hours p {
   -moz-border-radius: 3px;
   -o-border-radius: 3px;
   color: #f2f2f2;
-  background-color: #a9a9a9;
+  background-color: #686868;
   padding: 3px 9px 3px 36px;
   float: left;
   text-decoration: none;
@@ -1232,7 +1232,7 @@ a.document em {
   font-family: 'Droid Sans', sans-serif;
   padding-left: 0px;
   margin: 0px;
-  color: #a9a9a9;
+  color: #686868;
   width: 245px;
   float: right;
   list-style: none; }
@@ -1266,7 +1266,7 @@ a.document em {
   padding: 8px 5px 0px 5px;
   font-weight: bold;
   font-size: 14px;
-  color: #8f8f8f; }
+  color: #4e4e4e; }
 
 .banner {
   position: relative;
