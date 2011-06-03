@@ -341,7 +341,8 @@ h1 {
 
 h2,
 h3,
-h4 {
+h4,
+.pullquote {
   font-size: 24px;
   color: #003366;
   clear: both;
@@ -349,8 +350,12 @@ h4 {
   font-family: 'Droid Sans', sans-serif;
   font-weight: normal; }
 
-h2 {
+.pullquote {
   font-size: 24px; }
+
+h2 {
+  font-size: 24px;
+  font-weight: bold; }
 
 h3 {
   font-size: 18px;

@@ -21,8 +21,10 @@ body .main-block #newsbanner { position: relative; left: -20px; }
 h1 { font-size: 16px; color: $lightbluetext; font-family: 'Droid Sans', sans-serif; }
 h2,
 h3,
-h4 { font-size: 24px; color: $darkbluetext; clear: both; padding: 10px 0px 3px; font-family: 'Droid Sans', sans-serif; font-weight: normal; }
-h2 { font-size: 24px; }
+h4,
+.pullquote { font-size: 24px; color: $darkbluetext; clear: both; padding: 10px 0px 3px; font-family: 'Droid Sans', sans-serif; font-weight: normal; }
+.pullquote { font-size: 24px; }
+h2 { font-size: 24px; font-weight: bold; }
 h3 { font-size: 18px; font-weight: bold; }
 h4 { font-size: 16px; font-weight: normal; }
 
