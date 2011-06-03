@@ -1316,7 +1316,7 @@ a.document em {
   margin-left: -6px !important;
   margin-right: -6px !important; }
 
-.pullout {
+blockquote {
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1330,28 +1330,28 @@ a.document em {
   position: relative;
   left: -5px; }
 
-.pullout ul {
+blockquote ul {
   list-style: none;
   padding: 5px 0px 0px; }
 
-.pullout ul li {
+blockquote ul li {
   position: relative; }
 
-.pullout ul li:before {
+blockquote ul li:before {
   content: "›";
   position: absolute;
   left: 3px; }
 
-.pullout ul li a {
+blockquote ul li a {
   font-size: 14px;
   color: #3e658e;
   border: 0px;
   padding: 0px 0px 0px 17px; }
 
-.pullout ul li a strong {
+blockquote ul li a strong {
   color: #003366; }
 
-blockquote.pullout {
+blockquote {
   background: #dfe9f4 url("../images/quote_marks.png") no-repeat 18px 14px;
   padding: 0px;
   margin-top: 0px; }
