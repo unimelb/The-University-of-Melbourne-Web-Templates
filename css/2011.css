@@ -870,13 +870,13 @@ blockquote.opening-hours p {
   background: #f2f2f2;
   line-height: 1.6em; }
 
-.footer h1 {
+.footer h3 {
   clear: both;
   font-size: 20px;
   margin: 0px 0px 14px 20px;
   color: #686868; }
 
-.footer h2 {
+.footer h4 {
   color: #686868;
   margin: 0px;
   padding: 0px;

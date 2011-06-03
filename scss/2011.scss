@@ -181,8 +181,8 @@ blockquote.opening-hours p { padding: 13px 13px 13px 43px; text-indent: 0px; }
 
 /*  Footer styles */
 .footer { display: block; margin: 30px 0px -24px; padding: 30px 0px; clear: both; color: $darkgrey; background: $lightgrey; line-height: 1.6em; }
-.footer h1 { clear: both; font-size: 20px; margin: 0px 0px 14px $gutter-width; color: $darkgrey; }
-.footer h2 { color: $darkgrey; margin: 0px; padding: 0px; font-family: sans-serif; font-weight: bold; font-size: 13px; }
+.footer h3 { clear: both; font-size: 20px; margin: 0px 0px 14px 20px; color: $darkgrey; }
+.footer h4 { color: $darkgrey; margin: 0px; padding: 0px; font-family: sans-serif; font-weight: bold; font-size: 13px; }
 .footer a { color: $darkgrey; }
 .footer ul { margin-top: 0px; padding: 0px; list-style: none; }
 .footer #org-details, .footer ul { float: left; padding: 0px; }
