@@ -18,7 +18,9 @@ body .main-block .aside { padding-top: 0px; }
 body .main-block #newsbanner { position: relative; left: -20px; }
 
 /*  Typography  */
-h1 { font-size: 16px; color: $lightbluetext; font-family: 'Droid Sans', sans-serif; }
+h1,
+.nav h2,
+.aside h2 { font-size: 16px; color: $lightbluetext; font-family: 'Droid Sans', sans-serif; }
 h2,
 h3,
 h4,
@@ -68,7 +70,7 @@ table tbody tr:nth-child(2n+1) { background: #EEF7FF; }
 form { overflow: hidden; margin-top:15px; margin-bottom:15px; }
 form fieldset { position: relative; margin-bottom: 10px; background: #fafcff; padding: 5px 0px 20px; border: 1px solid darken($blockquote, 10%); }
 form legend { display: none; }
-form h2 { font-family: "Droid Sans", sans-serif; font-weight: bold; font-size: 14px; margin: 0px 15px 15px; padding-bottom: 4px; border-bottom: 1px solid $blockquote; display: block; text-align: center; }
+form h3, form h4, form h5 { font-family: "Droid Sans", sans-serif; font-weight: bold; font-size: 14px; margin: 0px 15px 15px; padding-bottom: 4px; border-bottom: 1px solid $blockquote; display: block; text-align: center; }
 form p { text-align: center; padding: 1px 80px; }
 form label { line-height: 1.3; padding: 5px 0px; }
 form input,
@@ -123,7 +125,7 @@ input[type=submit]:active,
 
 /*  Navigation styles */
 .nav { float: right; margin-top: 40px; }
-.nav h1 { margin-left: 10px; }
+.nav h2 { margin-left: 10px; }
 .nav h2 { margin-bottom:($gutter-width / 2);}
 .nav ul { list-style-image:url("../images/list-style.png") no-repeat -5px -5px; list-style: none; margin: 0px 0px 0px 10px; padding: 0px; }
 .nav ul li { margin: 12px 0px 0px; font-size: 14px; font-weight: bold; font-family: 'Droid Sans', sans-serif; color: $blockquotetext; line-height: 1.3; }

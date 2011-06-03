@@ -334,7 +334,9 @@ body .main-block #newsbanner {
   left: -20px; }
 
 /*  Typography  */
-h1 {
+h1,
+.nav h2,
+.aside h2 {
   font-size: 16px;
   color: #6685a4;
   font-family: 'Droid Sans', sans-serif; }
@@ -497,7 +499,7 @@ form fieldset {
 form legend {
   display: none; }
 
-form h2 {
+form h3, form h4, form h5 {
   font-family: "Droid Sans", sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -657,7 +659,7 @@ input[type=submit]:active,
   float: right;
   margin-top: 40px; }
 
-.nav h1 {
+.nav h2 {
   margin-left: 10px; }
 
 .nav h2 {
