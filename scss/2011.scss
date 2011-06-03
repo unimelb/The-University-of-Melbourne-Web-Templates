@@ -126,9 +126,9 @@ input[type=submit]:active,
 .nav h1 { margin-left: 10px; }
 .nav h2 { margin-bottom:($gutter-width / 2);}
 .nav ul { list-style-image:url("../images/list-style.png") no-repeat -5px -5px; list-style: none; margin: 0px 0px 0px 10px; padding: 0px; }
-.nav ul li { margin: 12px 0px 0px; font-size: 14px; font-weight: bold; font-family: 'Droid Sans', sans-serif; color: $darkbluetext; line-height: 1.3; }
+.nav ul li { margin: 12px 0px 0px; font-size: 14px; font-weight: bold; font-family: 'Droid Sans', sans-serif; color: $blockquotetext; line-height: 1.3; }
 
-.nav ul li a { color: $darkbluetext; border-bottom: none; display: block; }
+.nav ul li a { color: $blockquotetext; border-bottom: none; display: block; }
 .nav ul li a:hover, .nav ul li a:focus { border: 0px; color: $highlightred; }
 .nav ul li ul { margin: 4px 0px 0px; padding: 0px; }
 .nav ul li ul li { position: relative; margin: 0px 0px 2px; border-top: 1px solid $blockquote; padding: 8px 1px 4px 0px; color: $blockquotetext; font-size: 13px; font-family: sans-serif; font-weight: normal; }

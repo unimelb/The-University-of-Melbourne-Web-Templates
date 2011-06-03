@@ -674,11 +674,11 @@ input[type=submit]:active,
   font-size: 14px;
   font-weight: bold;
   font-family: 'Droid Sans', sans-serif;
-  color: #003366;
+  color: #3e658e;
   line-height: 1.3; }
 
 .nav ul li a {
-  color: #003366;
+  color: #3e658e;
   border-bottom: none;
   display: block; }
 
