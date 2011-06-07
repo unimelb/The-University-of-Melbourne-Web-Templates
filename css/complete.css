@@ -744,6 +744,9 @@ a {
   .main a:visited {
     color: #003366;
     border-bottom: 1px solid #003366; }
+    .main a:visited:hover {
+      color: #cc3333;
+      border-bottom: 1px solid #cc3333; }
 
 /*  List styles */
 ul, ol {
@@ -1353,6 +1356,11 @@ a.icon {
   font-weight: bold; }
   a.icon:hover, a.icon:focus {
     background-color: #3e658e; }
+  a.icon:visited {
+    color: #fff;
+    border: none; }
+    a.icon:visited:hover {
+      color: #fff; }
 
 a.document {
   position: relative;
