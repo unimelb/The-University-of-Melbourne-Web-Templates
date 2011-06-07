@@ -54,7 +54,9 @@ a { text-decoration: none;
 .main a { border-bottom: 1px solid; 
   &:visited { 
     color:$darkbluetext;
-    border-bottom: 1px solid $darkbluetext;}}
+    border-bottom: 1px solid $darkbluetext;
+    &:hover { color: $highlightred; border-bottom:1px solid $highlightred;};
+    }}
   
 /*  List styles */
 ul, ol { margin: 10px 0px 10px 0px; padding: 0px 0px 0px 20px;}
@@ -236,7 +238,9 @@ a.icon {
   @include border-radius(4px);
   @include transition(background, 100ms, linear);
   display: inline-block; background: $uniblue; border: 0px; padding: 8px 14px 8px 36px; margin: 12px 0px; color: #fff; font-family: 'Droid Sans', sans-serif; font-size: 13px; font-weight: bold;
-  &:hover, &:focus { background-color: $blockquotetext; } }
+  &:hover, &:focus { background-color: $blockquotetext; }
+  &:visited { color:#fff; border:none;
+    &:hover {color:#fff;}} }
 a.document { position: relative; background: $uniblue url('../images/icon-document-small.png') center left no-repeat; }
 a.document:before { content:attr(rel); position: absolute; top: 50%; left: 21px; font-size: 8px; margin-top: 4px; line-height: 8px; text-transform: uppercase; }
 a.media { background: $uniblue url('../images/icon-media-small.png') center left no-repeat; }
