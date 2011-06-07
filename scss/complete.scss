@@ -49,9 +49,12 @@ pre { margin: 5px 0px 10px; padding: 0px; overflow-x: auto;
 
 a { text-decoration: none;
   &:hover, &:focus {
-    @include transition(color, 300ms, linear);
-    color: $highlightred; } }
-.main a { border-bottom: 1px solid; }
+    @include transition(color, 150ms, linear);
+    color: $highlightred; }}
+.main a { border-bottom: 1px solid; 
+  &:visited { 
+    color:$darkbluetext;
+    border-bottom: 1px solid $darkbluetext;}}
   
 /*  List styles */
 ul, ol { margin: 10px 0px 10px 0px; padding: 0px 0px 0px 20px;}

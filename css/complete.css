@@ -734,13 +734,16 @@ pre {
 a {
   text-decoration: none; }
   a:hover, a:focus {
-    -webkit-transition: color 300ms linear;
-    -moz-transition: color 300ms linear;
-    transition: color 300ms linear;
+    -webkit-transition: color 150ms linear;
+    -moz-transition: color 150ms linear;
+    transition: color 150ms linear;
     color: #cc3333; }
 
 .main a {
   border-bottom: 1px solid; }
+  .main a:visited {
+    color: #003366;
+    border-bottom: 1px solid #003366; }
 
 /*  List styles */
 ul, ol {

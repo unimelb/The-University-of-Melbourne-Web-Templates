@@ -6,10 +6,8 @@ $darkestblue    :   #024;
 $highlightred   :   #c33;
 $blockquote     :   #dfe9f4;
 $blockquotetext :   #3e658e;
-
 $lightgrey      :   #f2f2f2;
 $darkgrey       :   #686868;
-
 
 @mixin border-radius($radius: 3px) {
   border-radius: $radius; -webkit-border-radius: $radius; -moz-border-radius: $radius; -o-border-radius: $radius; }
