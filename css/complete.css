@@ -1320,6 +1320,9 @@ a.button:visited {
   color: #fff;
   border: 0px;
   border: 0px; }
+  a.button:hover,
+  a.button:visited:hover {
+    color: #fff; }
 
 a.button:after {
   content: "›";

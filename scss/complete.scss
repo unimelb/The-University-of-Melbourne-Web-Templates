@@ -227,7 +227,8 @@ a.button {
   @include ttb-gradient(#446791, #164682);
   display: inline-block; padding: 5px 14px 4px; margin: 5px 5px 10px 0px; color: #fff; border: 0px; vertical-align: middle; float: left; }
 a.button,
-a.button:visited { color: #fff; border: 0px; border: 0px; }
+a.button:visited { color: #fff; border: 0px; border: 0px; 
+  &:hover { color:#fff;}}
 a.button:after { content: "›"; font-family: trebuchet; font-size: 1.7em; font-weight: bold; margin: 0px 0px 0px 12px; line-height: 0.5; color: $lightbluetext; }
 a.button:hover, a.button:focus {
   @include box-shadow(0px, 0px, 10px, rgba(68, 103, 145, 1)); }
