@@ -634,7 +634,7 @@ h1,
 .aside h2 {
   font-size: 16px;
   color: #6685a4;
-  font-family: 'Droid Sans', sans-serif; }
+  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 h2,
 h3,
@@ -644,7 +644,7 @@ h4,
   color: #003366;
   clear: both;
   padding: 10px 0px 3px;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: normal; }
 
 .pullquote {
@@ -976,7 +976,7 @@ input[type=submit]:active,
   margin: 12px 0px 0px;
   font-size: 14px;
   font-weight: bold;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   color: #3e658e;
   line-height: 1.3; }
 
@@ -1128,7 +1128,7 @@ blockquote {
   background: #dfe9f4 url("../images/quote_marks.png") no-repeat 18px 14px;
   position: relative;
   margin: 20px 0px 20px;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: bold;
   font-size: 20px; }
 
@@ -1233,7 +1233,7 @@ ul.news li {
   float: left; }
 
 ul.news a {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   color: #003366;
   font-weight: bold;
   font-size: 14px;
@@ -1354,7 +1354,7 @@ a.icon {
   padding: 8px 14px 8px 36px;
   margin: 12px 0px;
   color: #fff;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   font-size: 13px;
   font-weight: bold; }
   a.icon:hover, a.icon:focus {
@@ -1501,7 +1501,7 @@ a.document em {
   -webkit-text-shadow: 1px 1px 2px #003366;
   -moz-text-shadow: 1px 1px 2px #003366;
   -o-text-shadow: 1px 1px 2px #003366;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   color: #dfe9f4;
   font-size: 21px;
   line-height: 1.3;
@@ -1545,7 +1545,7 @@ a.document em {
 
 #newsbanner ol {
   counter-reset: section;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   padding-left: 0px;
   margin: 0px;
   color: #686868;
@@ -1632,7 +1632,7 @@ blockquote {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -o-border-radius: 3px;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   background: #dfe9f4;
   color: #3e658e;
   margin-top: 10px;
