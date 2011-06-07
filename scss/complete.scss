@@ -223,7 +223,7 @@ ul.inline, ul.inline li { float: left; position: relative; }
 a.button {
   @include border-radius(4px);
   @include text-shadow;
-  @include transition(all, 300ms, linear);
+  @include transition(all, 150ms, linear);
   @include ttb-gradient(#446791, #164682);
   display: inline-block; padding: 5px 14px 4px; margin: 5px 5px 10px 0px; color: #fff; border: 0px; vertical-align: middle; float: left; }
 a.button,
