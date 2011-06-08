@@ -39,4 +39,11 @@ Release Notes
 
 # 0.9.1
 
+- Fixed text contrast in internal footer
+- Changed search and translate images to text based links
+- Changed google translate functionality to open in new window rather than in-page
+- Fixed main menu colour to make them different from heading colours (to resolve WCAG 2.0 AA compliance issue)
+- Fixed heading hierarchies a little (requires re-download of deploy package as markup has changed - hey, that's what a beta is for ;-) )
+- Worked on block quote styles. 
+- Fixed filenames in package to make them make sense (e.g. Index is now a homepage style, content page is now content.html. Homepage-alt is still homepage-alt.html)
 
