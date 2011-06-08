@@ -18,6 +18,7 @@ The contents of this repository have been produced by The University of Melbourn
 Release Notes 
 ======================
 
+# 0.9.2
 ## Deploy package changes 
 - Removed media declaration from complete.css style tag to allow print stylesheet support
 - Improved h1–h6 structure (in the markup) and styles
@@ -34,4 +35,8 @@ Release Notes
 - Beefed up the font stack for redundancy
 - Increased HTML5 transition speed on linkI wans to 150ms from 300ms to appear more responsive
 - Renamed SCSS files to cause generation of an complete.css file
+
+
+# 0.9.1
+
 
