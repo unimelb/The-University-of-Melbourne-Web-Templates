@@ -21,7 +21,9 @@ body .main-block #newsbanner { position: relative; left: -20px; }
 /*  Typography  */
 h1,
 .nav h2,
-.aside h2 { font-size: 16px; color: $lightbluetext; font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
+.aside h2,
+.main > h2,
+#main-content > h2 { font-size: 16px; color: $lightbluetext; font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
 h2,
 h3,
 h4,
@@ -189,8 +191,8 @@ blockquote.opening-hours p { padding: 13px 13px 13px 43px; text-indent: 0px; }
 
 /*  Footer styles */
 .footer { display: block; margin: 30px 0px -24px; padding: 30px 0px; clear: both; color: $darkgrey; background: $lightgrey; line-height: 1.6em; }
-.footer h3 { clear: both; font-size: 20px; margin: 0px 0px 14px 20px; color: $darkgrey; }
-.footer h4 { color: $darkgrey; margin: 0px; padding: 0px; font-family: sans-serif; font-weight: bold; font-size: 13px; }
+.footer p.footertitle { font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; font-weight: bold; clear: both; font-size: 20px; margin: 0px 0px 14px 20px; color: $darkgrey; }
+.footer h2, .footer h3, .footer h4 { color: $darkgrey; margin: 0px; padding: 0px; font-family: sans-serif; font-weight: bold; font-size: 13px; }
 .footer a { color: $darkgrey; }
 .footer ul { margin-top: 0px; padding: 0px; list-style: none; }
 .footer #org-details, .footer ul { float: left; padding: 0px; }
@@ -275,11 +277,11 @@ a.document em { display: inline; color: $blockquote; padding-left: 7px; font-siz
   padding: 40px 0px 12px; font-size: 33px; color: #fff; line-height: 1; }
 
 .header .hgroup h1 a { color: #fff; }
-.header .hgroup h2 { position: absolute; top: 1px; font-size: 17px; font-weight: bold; white-space: nowrap; }
-.header .hgroup h2 a,
-.header .hgroup h2 a:hover, 
-.header .hgroup h2 a:focus,
-.header .hgroup h2 a:visited {
+.header .hgroup p { font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; position: absolute; top: 8px; font-size: 17px; font-weight: bold; white-space: nowrap; }
+.header .hgroup p a,
+.header .hgroup p a:hover, 
+.header .hgroup p a:focus,
+.header .hgroup p a:visited {
   @include text-shadow(1px, 1px, 2px, $uniblue);
   text-decoration: none; font-size: 17px; color: #fff; font-weight: normal; line-height: 1; }
 
@@ -287,9 +289,9 @@ a.document em { display: inline; color: $blockquote; padding-left: 7px; font-siz
 .header #headingtext p {
   @include text-shadow(1px, 1px, 2px, $uniblue);
   font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; color: $blockquote; font-size: 21px; line-height: 1.3; margin-left: 20px; }
-.header #headingtext h1 {
+.header #headingtext p.title {
   @include text-shadow(1px, 1px, 2px, $uniblue);
-  color: $blockquote; padding-top: 3px; line-height: 1.3; }
+  color: $blockquote; padding-top: 3px; line-height: 1.3; font-size: 16px; font-weight: bold; }
 .header #headingtext img { width: 210px; margin: -60px 0px 0px; }
 
 /*  Newsbannner styles  */
@@ -313,10 +315,10 @@ a.document em { display: inline; color: $blockquote; padding-left: 7px; font-siz
 .banner { position: relative; overflow: hidden; }
 .banner img { display: block; }
 .banner .banner-text { position: absolute; left: 0px; bottom: 0px; width: 100%; background: rgb(49, 71, 120); background: rgba(49, 71, 120, 0.8); padding: 10px 0px; pointer-events: none; }
-.banner .banner-text h1,
-.banner .banner-text h2 { margin-left: 20px; color: #fff; }
-.banner .banner-text h1 a { font-size: 16px; color: $blockquote; border: 0px; }
-.banner .banner-text h2 a { font-size: 28px; font-weight: normal; padding: 5px 0px; color: #fff; line-height: 1.3; letter-spacing: 1px; border: 0px; }
+.banner .banner-text h2,
+.banner .banner-text h3 { margin-left: 20px; padding-top: 0px; color: #fff; }
+.banner .banner-text h2 a { font-size: 16px; color: $blockquote; border: 0px; }
+.banner .banner-text h3 a { font-size: 28px; font-weight: normal; padding: 5px 0px; color: #fff; line-height: 1.3; letter-spacing: 1px; border: 0px; }
 
 .polaroid { @include polaroid; }
 
@@ -345,18 +347,18 @@ body.clouds { background: url("../images/backgrounds/clouds.jpg") top center rep
 
 body.clouds .hgroup h1,
 body.clouds .hgroup h1 a,
-body.clouds .hgroup h2 a, 
+body.clouds .hgroup p a, 
 body.clouds #headingtext h1,
 body.clouds #headingtext p,
 body.yellow .hgroup h1,
 body.yellow .hgroup h1 a,
-body.yellow .hgroup h2 a, 
+body.yellow .hgroup p a, 
 body.yellow #headingtext h1,
 body.yellow #headingtext p,
 body.yellow-home .hgroup h1,
 body.yellow-home .hgroup h1 a,
-body.yellow-home .hgroup h2 a, 
-body.yellow-home #headingtext h1,
+body.yellow-home .hgroup p a, 
+body.yellow-home #headingtext p.title,
 body.yellow-home #headingtext p {
   @include text-shadow(1px, 1px, 1px, rgba(255, 255, 255, 0.3));
   color: $uniblue; }
