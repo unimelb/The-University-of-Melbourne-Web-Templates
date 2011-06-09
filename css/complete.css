@@ -1267,8 +1267,9 @@ ul.news .timestamp {
   font-size: 18px;
   padding: 0px; }
 
-.page-preview .button {
-  margin-top: 0px;
+.page-preview p .button {
+  position: relative;
+  top: 4px;
   margin-bottom: 26px; }
 
 /*  Visual lists -i.e. lists that aren't simple dot points or ordered lists */
