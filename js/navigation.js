@@ -155,14 +155,15 @@ Navigation = (function() {
   // Injects all the extra elements required by the nested show/hide nav
   function initNestedNav(li) {
     li.className += ' closed';
-    var a = document.createElement('a'),
+    var ul = Navigation.findChildrenByTag(li.childNodes, 'UL')[0] || li.firstChild,
+        a = document.createElement('a'),
         text = document.createTextNode('More');
 
     a.setAttribute('class', 'more');
     a.setAttribute('className', 'more');
     a.setAttribute('href', '#');
     a.appendChild(text);
-    li.insertBefore(a, li.firstChild);
+    li.insertBefore(a, ul);
   }
 
 })();
