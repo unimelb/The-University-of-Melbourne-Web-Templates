@@ -2,9 +2,16 @@ $(function() {
 
   var newsbanner = $('#newsbanner'),
       wrapper = $('#banner-wrapper'),
-      firstBanner = $('.banner', wrapper).first(),
-      bannerHeight = firstBanner.height(),
+      banners = $('.banner', wrapper),
+      bannerHeight = banners.first().height(),
       links = $('ol a', newsbanner);
+
+  $('> a', banners).focus(function() {
+    // store the index of the focused banner
+    var index = banners.index(this.parentNode);
+    // then activate the click event of the corresponding link
+    links.eq(index).click();
+  });
 
   links.click(function(e) {
     // store the index of the clicked link
