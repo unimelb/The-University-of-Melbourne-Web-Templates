@@ -108,6 +108,7 @@ Navigation = (function() {
     // Create a wrapping paragraph for the select box
     var node = document.createElement('div');
     node.setAttribute('class', 'mobile-nav');
+    node.setAttribute('role', 'navigation');
     node.innerHTML = '<p>Navigation:</p>'+html;
     // Either inject the selectbox directly into .header (for the templates),
     if (!!header) header.appendChild(node);
