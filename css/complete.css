@@ -1725,7 +1725,7 @@ body.yellow-home #headingtext p {
   color: #003366; }
 
 /*  IE Fixes  */
-.header .hgroup h2 {
+.header .hgroup p {
   *top: 8px; }
 
 .main {
