@@ -631,9 +631,11 @@ body .main-block #newsbanner {
 /*  Typography  */
 h1,
 .nav h2,
-.aside h2 {
+.aside h2,
+.main > h2,
+#main-content > h2 {
   font-size: 16px;
-  color: #6685a4;
+  color: #56738f;
   font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 h2,
@@ -729,7 +731,7 @@ pre {
     background-color: #93b5da;
     -webkit-border-radius: 5px; }
   pre::-webkit-scrollbar-corner {
-    background: #6685a4; }
+    background: #56738f; }
 
 a {
   text-decoration: none; }
@@ -742,8 +744,8 @@ a {
 .main a {
   border-bottom: 1px solid; }
   .main a:visited {
-    color: #003366;
-    border-bottom: 1px solid #003366; }
+    color: #4d476b;
+    border-bottom: 1px solid #4d476b; }
     .main a:visited:hover {
       color: #cc3333;
       border-bottom: 1px solid #cc3333; }
@@ -981,7 +983,7 @@ input[type=submit]:active,
   line-height: 1.3; }
 
 .nav ul li a {
-  color: #3e658e;
+  color: #13435c;
   border-bottom: none;
   display: block; }
 
@@ -1004,7 +1006,7 @@ input[type=submit]:active,
   font-weight: normal; }
 
 .nav ul li ul li a {
-  color: #3e658e;
+  color: #13435c;
   border-bottom: none; }
 
 .nav ul li ul li a:hover, .nav ul li ul li a:focus {
@@ -1073,7 +1075,7 @@ input[type=submit]:active,
 
 .nav ul li .more:hover, .nav ul li .more:focus {
   background: #b9cfe7;
-  color: #3e658e; }
+  color: #2f4c6a; }
 
 .nav ul li .more:after {
   position: absolute;
@@ -1173,13 +1175,15 @@ blockquote.opening-hours p {
   background: #f2f2f2;
   line-height: 1.6em; }
 
-.footer h3 {
+.footer p.footertitle {
+  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
   clear: both;
   font-size: 20px;
   margin: 0px 0px 14px 20px;
   color: #686868; }
 
-.footer h4 {
+.footer h2, .footer h3, .footer h4 {
   color: #686868;
   margin: 0px;
   padding: 0px;
@@ -1234,7 +1238,7 @@ ul.news li {
 
 ul.news a {
   font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
-  color: #003366;
+  color: #13435c;
   font-weight: bold;
   font-size: 14px;
   width: 105px;
@@ -1245,7 +1249,7 @@ ul.news a {
 ul.news .timestamp {
   width: 75px;
   float: right;
-  color: #6685a4; }
+  color: #56738f; }
 
 .page-preview {
   float: left;
@@ -1331,7 +1335,7 @@ a.button:after {
   font-weight: bold;
   margin: 0px 0px 0px 12px;
   line-height: 0.5;
-  color: #6685a4; }
+  color: #56738f; }
 
 a.button:hover, a.button:focus {
   box-shadow: 0px 0px 10px #446791;
@@ -1470,17 +1474,18 @@ a.document em {
 .header .hgroup h1 a {
   color: #fff; }
 
-.header .hgroup h2 {
+.header .hgroup p {
+  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   position: absolute;
-  top: 1px;
+  top: 8px;
   font-size: 17px;
   font-weight: bold;
   white-space: nowrap; }
 
-.header .hgroup h2 a,
-.header .hgroup h2 a:hover,
-.header .hgroup h2 a:focus,
-.header .hgroup h2 a:visited {
+.header .hgroup p a,
+.header .hgroup p a:hover,
+.header .hgroup p a:focus,
+.header .hgroup p a:visited {
   text-shadow: 1px 1px 2px #003366;
   -webkit-text-shadow: 1px 1px 2px #003366;
   -moz-text-shadow: 1px 1px 2px #003366;
@@ -1507,14 +1512,16 @@ a.document em {
   line-height: 1.3;
   margin-left: 20px; }
 
-.header #headingtext h1 {
+.header #headingtext p.title {
   text-shadow: 1px 1px 2px #003366;
   -webkit-text-shadow: 1px 1px 2px #003366;
   -moz-text-shadow: 1px 1px 2px #003366;
   -o-text-shadow: 1px 1px 2px #003366;
   color: #dfe9f4;
   padding-top: 3px;
-  line-height: 1.3; }
+  line-height: 1.3;
+  font-size: 16px;
+  font-weight: bold; }
 
 .header #headingtext img {
   width: 210px;
@@ -1563,7 +1570,7 @@ a.document em {
   #newsbanner ol li:last-child {
     border-bottom: none; }
   #newsbanner ol li:hover, #newsbanner ol li:focus, #newsbanner ol li.selected {
-    background: #f3f5f8;
+    background: #dce3ea;
     color: rgba(0, 51, 102, 0.9); }
   #newsbanner ol li.selected a, #newsbanner ol li:hover a, #newsbanner ol li:focus a {
     color: rgba(0, 51, 102, 0.9); }
@@ -1601,17 +1608,18 @@ a.document em {
   padding: 10px 0px;
   pointer-events: none; }
 
-.banner .banner-text h1,
-.banner .banner-text h2 {
+.banner .banner-text h2,
+.banner .banner-text h3 {
   margin-left: 20px;
+  padding-top: 0px;
   color: #fff; }
 
-.banner .banner-text h1 a {
+.banner .banner-text h2 a {
   font-size: 16px;
   color: #dfe9f4;
   border: 0px; }
 
-.banner .banner-text h2 a {
+.banner .banner-text h3 a {
   font-size: 28px;
   font-weight: normal;
   padding: 5px 0px;
@@ -1697,18 +1705,18 @@ body.clouds {
 
 body.clouds .hgroup h1,
 body.clouds .hgroup h1 a,
-body.clouds .hgroup h2 a,
+body.clouds .hgroup p a,
 body.clouds #headingtext h1,
 body.clouds #headingtext p,
 body.yellow .hgroup h1,
 body.yellow .hgroup h1 a,
-body.yellow .hgroup h2 a,
+body.yellow .hgroup p a,
 body.yellow #headingtext h1,
 body.yellow #headingtext p,
 body.yellow-home .hgroup h1,
 body.yellow-home .hgroup h1 a,
-body.yellow-home .hgroup h2 a,
-body.yellow-home #headingtext h1,
+body.yellow-home .hgroup p a,
+body.yellow-home #headingtext p.title,
 body.yellow-home #headingtext p {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
   -webkit-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
@@ -1717,7 +1725,7 @@ body.yellow-home #headingtext p {
   color: #003366; }
 
 /*  IE Fixes  */
-.header .hgroup h2 {
+.header .hgroup p {
   *top: 8px; }
 
 .main {
