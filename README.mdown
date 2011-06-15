@@ -24,6 +24,7 @@ Release Notes
 - Removed lightbox/modal box code until WCAG 2.0 AA compliant approach can be determined. Currently investigating http://plugins.jquery.com/project/ARIALightbox
 - Changed all references to Faculty of Foo and the Graduate School of Bar
 - Adjusted placeholder text to make it more unique
+- Added "LATEST" path instead of "EDGE". LATEST always references the latest version of the template assets. EDGE references the current working version (HEAD/nightly). Specific versions remain the same
 
 
 ##Globalised changes
