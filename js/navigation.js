@@ -80,7 +80,8 @@ Navigation = (function() {
         html = '';
     for (var i = 0, ii = list.length; i < ii; i++) {
       html += '<option value="'+list[i].link+'">'+prefix+list[i].text+'</option>';
-      if (!!list[i].children) html += buildSelect(list[i].children, '—'+prefix);
+      // if (!!list[i].children) html += buildSelect(list[i].children, '—'+prefix);
+      if (!!list[i].children) html += buildSelect(list[i].children, '&mdash;'+prefix);      
     }
     return html;
   }
