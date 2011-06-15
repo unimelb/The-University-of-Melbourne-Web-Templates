@@ -18,6 +18,22 @@ The contents of this repository have been produced by The University of Melbourn
 Release Notes 
 ======================
 
+#0.9.3
+##Deploy package changes
+- Reordered heading structures to be more useful for screen readers
+- Removed lightbox/modal box code until WCAG 2.0 AA compliant approach can be determined. Currently investigating http://plugins.jquery.com/project/ARIALightbox
+- Changed all references to Faculty of Foo and the Graduate School of Bar
+- Adjusted placeholder text to make it more unique
+
+
+##Globalised changes
+- Modified contrast to be WCAG 2.0 AA compliant 
+- Removed keyboard trap with sliding news banner on index.html. This now allows users to tab through using only a keyboard 
+- Added labels to translate items
+- Adjusted Skip link CSS to visually hide skip links (via text-indent) instead of display:none
+- Fixed navigation focus order to make it so that the More Link is highlighted after the parent link. 
+
+
 # 0.9.2
 ## Deploy package changes 
 - Removed media declaration from complete.css style tag to allow print stylesheet support
