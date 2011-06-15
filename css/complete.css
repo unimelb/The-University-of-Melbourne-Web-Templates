@@ -635,7 +635,7 @@ h1,
 .main > h2,
 #main-content > h2 {
   font-size: 16px;
-  color: #6685a4;
+  color: #56738f;
   font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 h2,
@@ -731,7 +731,7 @@ pre {
     background-color: #93b5da;
     -webkit-border-radius: 5px; }
   pre::-webkit-scrollbar-corner {
-    background: #6685a4; }
+    background: #56738f; }
 
 a {
   text-decoration: none; }
@@ -744,8 +744,8 @@ a {
 .main a {
   border-bottom: 1px solid; }
   .main a:visited {
-    color: #003366;
-    border-bottom: 1px solid #003366; }
+    color: #4d476b;
+    border-bottom: 1px solid #4d476b; }
     .main a:visited:hover {
       color: #cc3333;
       border-bottom: 1px solid #cc3333; }
@@ -983,7 +983,7 @@ input[type=submit]:active,
   line-height: 1.3; }
 
 .nav ul li a {
-  color: #3e658e;
+  color: #13435c;
   border-bottom: none;
   display: block; }
 
@@ -1006,7 +1006,7 @@ input[type=submit]:active,
   font-weight: normal; }
 
 .nav ul li ul li a {
-  color: #3e658e;
+  color: #13435c;
   border-bottom: none; }
 
 .nav ul li ul li a:hover, .nav ul li ul li a:focus {
@@ -1075,7 +1075,7 @@ input[type=submit]:active,
 
 .nav ul li .more:hover, .nav ul li .more:focus {
   background: #b9cfe7;
-  color: #3e658e; }
+  color: #2f4c6a; }
 
 .nav ul li .more:after {
   position: absolute;
@@ -1238,7 +1238,7 @@ ul.news li {
 
 ul.news a {
   font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
-  color: #003366;
+  color: #13435c;
   font-weight: bold;
   font-size: 14px;
   width: 105px;
@@ -1249,7 +1249,7 @@ ul.news a {
 ul.news .timestamp {
   width: 75px;
   float: right;
-  color: #6685a4; }
+  color: #56738f; }
 
 .page-preview {
   float: left;
@@ -1335,7 +1335,7 @@ a.button:after {
   font-weight: bold;
   margin: 0px 0px 0px 12px;
   line-height: 0.5;
-  color: #6685a4; }
+  color: #56738f; }
 
 a.button:hover, a.button:focus {
   box-shadow: 0px 0px 10px #446791;
@@ -1570,7 +1570,7 @@ a.document em {
   #newsbanner ol li:last-child {
     border-bottom: none; }
   #newsbanner ol li:hover, #newsbanner ol li:focus, #newsbanner ol li.selected {
-    background: #f3f5f8;
+    background: #dce3ea;
     color: rgba(0, 51, 102, 0.9); }
   #newsbanner ol li.selected a, #newsbanner ol li:hover a, #newsbanner ol li:focus a {
     color: rgba(0, 51, 102, 0.9); }
