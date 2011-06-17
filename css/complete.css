@@ -960,7 +960,8 @@ input[type=submit]:active,
 /*  Navigation styles */
 .nav {
   float: right;
-  margin-top: 40px; }
+  margin-top: 40px;
+  margin-bottom: 20px; }
 
 .nav h2 {
   margin-left: 10px; }
@@ -1094,10 +1095,10 @@ input[type=submit]:active,
   border-bottom: 4px solid #3e658e; }
 
 /*  Main styles */
-.col-2.aside {
-  float: right;
+.aside {
   display: inline;
-  padding: 40px 0px 0px; }
+  padding: 40px 0px 0px;
+  margin-top: 20px; }
 
 .main {
   float: left;
@@ -1610,7 +1611,7 @@ a.document em {
   pointer-events: none; }
 
 .banner .banner-text h2,
-.banner .banner-text h3 {
+.banner .banner-text p {
   margin-left: 20px;
   padding-top: 0px;
   color: #fff; }
@@ -1620,7 +1621,7 @@ a.document em {
   color: #dfe9f4;
   border: 0px; }
 
-.banner .banner-text h3 a {
+.banner .banner-text p a {
   font-size: 28px;
   font-weight: normal;
   padding: 5px 0px;
