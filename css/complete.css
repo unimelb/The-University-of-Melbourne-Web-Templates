@@ -960,7 +960,8 @@ input[type=submit]:active,
 /*  Navigation styles */
 .nav {
   float: right;
-  margin-top: 40px; }
+  margin-top: 40px;
+  margin-bottom: 20px; }
 
 .nav h2 {
   margin-left: 10px; }
@@ -1094,10 +1095,10 @@ input[type=submit]:active,
   border-bottom: 4px solid #3e658e; }
 
 /*  Main styles */
-.col-2.aside {
-  float: right;
+.aside {
   display: inline;
-  padding: 40px 0px 0px; }
+  padding: 40px 0px 0px;
+  margin-top: 20px; }
 
 .main {
   float: left;
