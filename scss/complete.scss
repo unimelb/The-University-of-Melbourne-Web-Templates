@@ -77,16 +77,14 @@ table tbody tr:nth-child(2n+1) { background: #EEF7FF; }
 /*  Form Styles */
 form { overflow: hidden; margin-top:15px; margin-bottom:15px; }
 form fieldset { position: relative; margin-bottom: 10px; background: #fafcff; padding: 5px 0px 20px; border: 1px solid darken($blockquote, 10%); }
-form legend { display: none; }
 form h3, form h4, form h5 { font-family: "Droid Sans", sans-serif; font-weight: bold; font-size: 14px; margin: 0px 15px 15px; padding-bottom: 4px; border-bottom: 1px solid $blockquote; display: block; text-align: center; }
 form p { text-align: center; padding: 1px 80px; }
-form label { line-height: 1.3; padding: 5px 0px; }
 form input,
 form textarea,
 form select { padding: 5px; margin: 0px 0px 6px; max-width: 100%; }
 form select { margin-top: 8px; margin-bottom: 8px; }
 form textarea { -webkit-appearance: textfield; }
-form label { font-family: "Droid Sans", sans-serif; font-weight: bold; margin-top: 0px; text-align: right; clear: both; }
+form label, form p { line-height: 1.3; padding: 5px 0px;  font-family: "Droid Sans", sans-serif; font-weight: bold; margin-top: 0px; text-align: right; clear: both; }
 form .follower { margin: 0px; }
 form .follower label { display: block; font-family: sans-serif; text-align: left; font-weight: normal; }
 form .follower input { margin: 0px 3px 0px 0px; }
@@ -175,7 +173,7 @@ input[type=submit]:active,
 /*  Main styles */
 .aside { display: inline; padding: 40px 0px 0px; margin-top:20px; }
 .main { float: left; display: inline; background: url("../images/heading_shadow.png") no-repeat top center; padding: 40px 0px 0px; }
-.main h1 { clear: both; color: $darkbluetext; }
+.main h1 { clear: both; color: darken($darkgrey, 10%); }
 
 .main .section { margin-bottom: $gutter-width;}
 .main .section h1 { margin-bottom: ($gutter-width / 2); }

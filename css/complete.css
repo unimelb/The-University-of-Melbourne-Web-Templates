@@ -799,9 +799,6 @@ form fieldset {
   padding: 5px 0px 20px;
   border: 1px solid #b9cfe7; }
 
-form legend {
-  display: none; }
-
 form h3, form h4, form h5 {
   font-family: "Droid Sans", sans-serif;
   font-weight: bold;
@@ -815,10 +812,6 @@ form h3, form h4, form h5 {
 form p {
   text-align: center;
   padding: 1px 80px; }
-
-form label {
-  line-height: 1.3;
-  padding: 5px 0px; }
 
 form input,
 form textarea,
@@ -834,7 +827,9 @@ form select {
 form textarea {
   -webkit-appearance: textfield; }
 
-form label {
+form label, form p {
+  line-height: 1.3;
+  padding: 5px 0px;
   font-family: "Droid Sans", sans-serif;
   font-weight: bold;
   margin-top: 0px;
@@ -1114,7 +1109,7 @@ input[type=submit]:active,
 
 .main h1 {
   clear: both;
-  color: #003366; }
+  color: #4e4e4e; }
 
 .main .section {
   margin-bottom: 20px; }
