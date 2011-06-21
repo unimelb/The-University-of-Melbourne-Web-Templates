@@ -18,6 +18,16 @@ The contents of this repository have been produced by The University of Melbourn
 Release Notes 
 ======================
 
+#0.9.4
+
+##Deployed package changes (requiring re-download/markup modifications)
+- Changed form labels to legends to make them more accessible (& adjusted CSS)
+
+##Globalised changes (centrally applied)
+- Modified heading text colour for contrast
+- Modified navigational link colours to provide additional colour differentiation
+
+
 #0.9.3
 ##Deploy package changes
 - Reordered heading structures to be more useful for screen readers
