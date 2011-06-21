@@ -1465,10 +1465,10 @@ a.document em {
   position: relative; }
 
 .header .hgroup h1 {
-  text-shadow: 1px 1px 2px #002244;
-  -webkit-text-shadow: 1px 1px 2px #002244;
-  -moz-text-shadow: 1px 1px 2px #002244;
-  -o-text-shadow: 1px 1px 2px #002244;
+  text-shadow: 0.5px 0.5px 4px #002244;
+  -webkit-text-shadow: 0.5px 0.5px 4px #002244;
+  -moz-text-shadow: 0.5px 0.5px 4px #002244;
+  -o-text-shadow: 0.5px 0.5px 4px #002244;
   padding: 40px 0px 12px;
   font-size: 33px;
   color: #fff;

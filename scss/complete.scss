@@ -274,7 +274,7 @@ a.document em { display: inline; color: $blockquote; padding-left: 7px; font-siz
   float: left; position: absolute; z-index: 10000; top: 25px; background: $uniblue url("../images/uom_logo.gif") no-repeat 15px 15px; width: 130px; height: 130px; display: block; }
 .header .hgroup { margin: -2px 0px 0px 145px; display: block; position: relative; }
 .header .hgroup h1 {
-  @include text-shadow(1px, 1px, 2px, $darkestblue);
+  @include text-shadow(0.5px, 0.5px, 4px, $darkestblue);
   padding: 40px 0px 12px; font-size: 33px; color: #fff; line-height: 1; }
 
 .header .hgroup h1 a { color: #fff; }
