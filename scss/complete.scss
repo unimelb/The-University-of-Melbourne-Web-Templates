@@ -22,8 +22,8 @@ body .main-block #newsbanner { position: relative; left: -20px; }
 h1,
 .nav h2,
 .aside h2,
-.main > h2,
-#main-content > h2 { font-size: 16px; color: $lightbluetext; font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
+body.home .main > h2,
+body.home #main-content > h2 { font-size: 16px; color: $darkbluetext;  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
 h2,
 h3,
 h4,
@@ -80,13 +80,13 @@ form fieldset { position: relative; margin-bottom: 10px; background: #fafcff; pa
 form legend { display: none; }
 form h3, form h4, form h5 { font-family: "Droid Sans", sans-serif; font-weight: bold; font-size: 14px; margin: 0px 15px 15px; padding-bottom: 4px; border-bottom: 1px solid $blockquote; display: block; text-align: center; }
 form p { text-align: center; padding: 1px 80px; }
-form label { line-height: 1.3; padding: 5px 0px; }
+form legend { line-height: 1.3; padding: 5px 0px; }
 form input,
 form textarea,
 form select { padding: 5px; margin: 0px 0px 6px; max-width: 100%; }
 form select { margin-top: 8px; margin-bottom: 8px; }
 form textarea { -webkit-appearance: textfield; }
-form label { font-family: "Droid Sans", sans-serif; font-weight: bold; margin-top: 0px; text-align: right; clear: both; }
+form legend, form label { font-family: "Droid Sans", sans-serif; font-weight: bold; margin-top: 0px; text-align: right; clear: both; }
 form .follower { margin: 0px; }
 form .follower label { display: block; font-family: sans-serif; text-align: left; font-weight: normal; }
 form .follower input { margin: 0px 3px 0px 0px; }
@@ -138,11 +138,11 @@ input[type=submit]:active,
 .nav ul { list-style-image:url("../images/list-style.png") no-repeat -5px -5px; list-style: none; margin: 0px 0px 0px 10px; padding: 0px; }
 .nav ul li { margin: 12px 0px 0px; font-size: 14px; font-weight: bold; font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; color: $blockquotetext; line-height: 1.3; }
 
-.nav ul li a { color: $anchorcolour; border-bottom: none; display: block; }
+.nav ul li a { color: $navanchorcolour; border-bottom: none; display: block; }
 .nav ul li a:hover, .nav ul li a:focus { border: 0px; color: $highlightred; }
 .nav ul li ul { margin: 4px 0px 0px; padding: 0px; }
 .nav ul li ul li { position: relative; margin: 0px 0px 2px; border-top: 1px solid $blockquote; padding: 8px 1px 4px 0px; color: $blockquotetext; font-size: 13px; font-family: sans-serif; font-weight: normal; }
-.nav ul li ul li a { color: $anchorcolour; border-bottom:none;}
+.nav ul li ul li a { color: $navanchorcolour; border-bottom:none;}
 .nav ul li ul li a:hover, .nav ul li ul li a:focus { color: $highlightred; }
 .nav ul li ul li ul { padding: 0px 0px 5px; margin-top: 8px; margin-bottom: -6px; background: $blockquote; }
 .nav ul li ul li ul li { padding-bottom: 0px; padding-left: 10px; }
@@ -173,7 +173,8 @@ input[type=submit]:active,
 /*  Main styles */
 .aside { display: inline; padding: 40px 0px 0px; margin-top:20px; }
 .main { float: left; display: inline; background: url("../images/heading_shadow.png") no-repeat top center; padding: 40px 0px 0px; }
-.main h1 { clear: both; }
+.main h1 { clear: both; color: $darkbluetext; }
+
 .main .section { margin-bottom: $gutter-width;}
 .main .section h1 { margin-bottom: ($gutter-width / 2); }
 .main .nav { margin-top: 0px; }

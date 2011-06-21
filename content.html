@@ -35,7 +35,7 @@
 
     <!-- GLOBAL RESOURCES -->
     <!-- DO NOT CHANGE -->  
-      <link rel="stylesheet" href="http://brand.unimelb.edu.au/web-templates/LATEST/css/complete.css">  
+      <link rel="stylesheet" href="css/complete.css">  
       <script src="http://brand.unimelb.edu.au/web-templates/LATEST/js/complete.js"></script>
       <script src="http://brand.unimelb.edu.au/global-header/js/injection.js"></script>
     <!-- /GLOBAL RESOURCES -->
@@ -262,17 +262,17 @@ for (var i = test_strings.length - 1; i >= 0; i--) {
 
         <fieldset>
           <h4>Gender</h4>
-          <label for="male" class="col-2">Gender</label>
+          <legend class="col-2">Gender</legend>
           <div class="follower col-3">
-            <label>
+            <label for="male">
               <input type="radio" name="gender" value="male" id="male">
               Male
             </label>
-            <label>
+            <label for="female">
               <input type="radio" name="gender" value="female" id="female">
               Female
             </label>
-            <label>
+            <label for="other">
               <input type="radio" name="gender" value="other" id="other">
               Neither of these terms describe me
             </label>
@@ -281,17 +281,17 @@ for (var i = test_strings.length - 1; i >= 0; i--) {
 
         <fieldset>
           <h4>Dietary Requirements</h4>
-          <label for="gluten" class="col-2">Requirements</label>
+          <legend for="gluten" class="col-2">Requirements</legend>
           <div class="follower col-3">
-            <label>
+            <label for="gluten">
               <input type="checkbox" name="dietary-requirements" value="gluten" id="gluten">
               Gluten allergies
             </label>
-            <label>
+            <label for="lactose">
               <input type="checkbox" name="dietary-requirements" value="lactose" id="lactose">
               Lactose intolerant
             </label>
-            <label>
+            <label for="bananas">
               <input type="checkbox" name="dietary-requirements" value="other" id="bananas">
               Don't like bananas
             </label>
@@ -300,13 +300,13 @@ for (var i = test_strings.length - 1; i >= 0; i--) {
 
         <fieldset>
           <h4>What can we do for you?</h4>
-          <label class="col-2" for="support">Support issue</label>
+          <legend class="col-2" for="support">Support issue</legend>
           <textarea class="col-3" type="text" name="support" id="support" placeholder="What can we help you with?" cols="20" rows="6"></textarea>
         </fieldset>
 
         <fieldset>
           <h4>What size head do you have?</h4>
-          <label class="col-2" for="headsize">Head size</label>
+          <legend class="col-2" for="headsize">Head size</legend>
           <select class="col-2" name="headsize" id="headsize" onchange="" size="1">
             <option value="option1">Small</option>
             <option value="option2">Medium</option>

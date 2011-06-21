@@ -632,10 +632,10 @@ body .main-block #newsbanner {
 h1,
 .nav h2,
 .aside h2,
-.main > h2,
-#main-content > h2 {
+body.home .main > h2,
+body.home #main-content > h2 {
   font-size: 16px;
-  color: #56738f;
+  color: #003366;
   font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 h2,
@@ -816,7 +816,7 @@ form p {
   text-align: center;
   padding: 1px 80px; }
 
-form label {
+form legend {
   line-height: 1.3;
   padding: 5px 0px; }
 
@@ -834,7 +834,7 @@ form select {
 form textarea {
   -webkit-appearance: textfield; }
 
-form label {
+form legend, form label {
   font-family: "Droid Sans", sans-serif;
   font-weight: bold;
   margin-top: 0px;
@@ -984,7 +984,7 @@ input[type=submit]:active,
   line-height: 1.3; }
 
 .nav ul li a {
-  color: #13435c;
+  color: #3e658e;
   border-bottom: none;
   display: block; }
 
@@ -1007,7 +1007,7 @@ input[type=submit]:active,
   font-weight: normal; }
 
 .nav ul li ul li a {
-  color: #13435c;
+  color: #3e658e;
   border-bottom: none; }
 
 .nav ul li ul li a:hover, .nav ul li ul li a:focus {
@@ -1107,7 +1107,8 @@ input[type=submit]:active,
   padding: 40px 0px 0px; }
 
 .main h1 {
-  clear: both; }
+  clear: both;
+  color: #003366; }
 
 .main .section {
   margin-bottom: 20px; }
