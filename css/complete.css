@@ -1757,6 +1757,9 @@ body.headingblock .main-block {
 a.button:hover, a.button:focus {
   *background: #446791; }
 
+table td {
+  *border: 1px solid #b9cfe7; }
+
 @media print {
   * {
     background: white !important;
