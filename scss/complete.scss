@@ -23,7 +23,7 @@ h1,
 .nav h2,
 .aside h2,
 body.home .main > h2,
-body.home #main-content > h2 { font-size: 16px; color: $darkbluetext;  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
+body.home #main-content > h2 { font-size: 16px; color: darken($darkgrey, 20%);  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
 h2,
 h3,
 h4,

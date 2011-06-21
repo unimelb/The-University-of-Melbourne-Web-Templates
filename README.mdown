@@ -18,7 +18,7 @@ The contents of this repository have been produced by The University of Melbourn
 Release Notes 
 ======================
 
-#0.9.4
+#0.9.5
 
 ##Deployed package changes (requiring re-download/markup modifications)
 - Changed form labels to legends to make them more accessible (& adjusted CSS)
@@ -26,7 +26,11 @@ Release Notes
 ##Globalised changes (centrally applied)
 - Modified heading text colour for contrast
 - Modified navigational link colours to provide additional colour differentiation
+- Improved IE6/7 support for tables
 
+#0.9.4
+
+Minor changes.
 
 #0.9.3
 ##Deploy package changes
