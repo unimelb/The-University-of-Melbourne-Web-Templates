@@ -23,7 +23,7 @@ h1,
 .nav h2,
 .aside h2,
 body.home .main > h2,
-body.home #main-content > h2 { font-size: 16px; color: darken($darkgrey, 20%);  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
+body.home #main-content > h2 { font-size: 16px; color: darken($darkgrey, 10%);  font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
 h2,
 h3,
 h4,
@@ -138,7 +138,7 @@ input[type=submit]:active,
 .nav h2 { margin-left: 10px; }
 .nav h2 { margin-bottom:($gutter-width / 2);}
 .nav ul { list-style-image:url("../images/list-style.png") no-repeat -5px -5px; list-style: none; margin: 0px 0px 0px 10px; padding: 0px; }
-.nav ul li { margin: 12px 0px 0px; font-size: 14px; font-weight: bold; font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; color: $blockquotetext; line-height: 1.3; }
+.nav ul li { margin: 12px 0px 0px; font-size: 14px; font-weight: bold; font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; color: darken($darkgrey, 10%); line-height: 1.3; }
 
 .nav ul li a { color: $navanchorcolour; border-bottom: none; display: block; }
 .nav ul li a:hover, .nav ul li a:focus { border: 0px; color: $highlightred; }
