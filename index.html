@@ -29,7 +29,7 @@
 <!-- End static meta data -->
 <!-- Meta data to be autofilled -->
   <meta name="DC.Date" content="">
-  <meta name="DC.Date.Modified" content="">
+  <!--#config timefmt="%Y-%m-%d" --><meta name="DC.Date.Modified" content="<!--#echo var='LAST_MODIFIED' -->">
 <!-- End meta data to be autofilled -->
   <meta content="width=device-width; initial-scale=0.67;" name="viewport">
 
@@ -203,8 +203,8 @@
       <ul class="col-2">
         <li><strong>Date created:</strong><br>
           11 February 2010</li>
-        <li><strong>Last modified:</strong><br>
-          11 February 2010</li>
+        <li><!--#config timefmt="%d %B %Y %H:%M:%S" --><strong>Last modified:</strong><br>
+			<!--#echo var="LAST_MODIFIED" --></li>
       </ul>
       <hr>
     </div>
