@@ -38,7 +38,8 @@
   .wrapper .polaroid { padding: 0px; border: 0px; box-shadow: none; -webkit-box-shadow: none; }
 
   #g-global-search #g-translate-button { display: none; }
-  #footernav h3 { display: none; }
+  body #footernav #footer-connect-title { display: none; }
+  body #g-header #g-global-menu { margin-right: 0px; }
   body #g-header #g-global-menu li a { font-size: 19px; white-space: nowrap; }
 
   .col-1,

@@ -529,8 +529,11 @@ button {
   #g-global-search #g-translate-button {
     display: none; }
 
-  #footernav h3 {
+  body #footernav #footer-connect-title {
     display: none; }
+
+  body #g-header #g-global-menu {
+    margin-right: 0px; }
 
   body #g-header #g-global-menu li a {
     font-size: 19px;
