@@ -18,6 +18,23 @@ The contents of this repository have been produced by The University of Melbourn
 Release Notes 
 ======================
 
+#1.0.0
+
+##Notes
+- Having reached WCAG 2.0 AA compliance, we have jumped to v1 
+
+##Deployed package changes (requiring re-download/markup modifications)
+- Fixed typo in footer (thanks Jessica Taylor)
+- Added apache code date strings (thanks Giles Ng)
+- Resolved validating issues on page
+- Fixed form markup to comply with accessibility guidelines
+
+##Globalised changes (centrally applied)
+- Removed translate widget pending disclaimer approval - can be added using "add-translate" body class
+- Modified colour scheme to ensure WCAG 2.0 AA compliance
+- Added IE6/7 table CSS support
+- Fixed bug with footer in media-query where text would override logo. 
+
 #0.9.5
 
 ##Deployed package changes (requiring re-download/markup modifications)
