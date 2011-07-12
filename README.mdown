@@ -20,9 +20,6 @@ Release Notes
 
 #0.9.6
 
-##Notes
-- Having reached WCAG 2.0 AA compliance, we have jumped to v1 
-
 ##Deployed package changes (requiring re-download/markup modifications)
 - Fixed typo in footer (thanks Jessica Taylor)
 - Added apache code date strings (thanks Giles Ng)
