@@ -18,7 +18,7 @@ The contents of this repository have been produced by The University of Melbourn
 Release Notes 
 ======================
 
-#1.0.0
+#0.9.6
 
 ##Notes
 - Having reached WCAG 2.0 AA compliance, we have jumped to v1 
@@ -30,7 +30,7 @@ Release Notes
 - Fixed form markup to comply with accessibility guidelines
 
 ##Globalised changes (centrally applied)
-- Removed translate widget pending disclaimer approval - can be added using "add-translate" body class
+- Removed translate widget pending disclaimer approval
 - Modified colour scheme to ensure WCAG 2.0 AA compliance
 - Added IE6/7 table CSS support
 - Fixed bug with footer in media-query where text would override logo. 
