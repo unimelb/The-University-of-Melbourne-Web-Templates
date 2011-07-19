@@ -1,5 +1,5 @@
 The University of Melbourne Web Templates
-============================================
+
 
 These templates have been created to comply with The University of Melbourne Web Brand Guidelines
 
@@ -17,6 +17,14 @@ The contents of this repository have been produced by The University of Melbourn
 
 Release Notes
 ======================
+#1.0.0
+After final approval from Senior Exec, ABAG and MMEG the new templates are endorsed for production use.
+
+##Deployed package changes
+None - this is the same as 0.9.6
+
+##Globalised changes (centrally applied)
+None - this is the same as 0.9.6
 
 #0.9.6
 
