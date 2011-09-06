@@ -1,9 +1,8 @@
-@media screen and (max-width: 480px) {
-  body { font-size: 92%; }
-  .wrapper { width: 455px; padding: 0px 10px; }
+@media screen and (max-width: 630px) {
+  .wrapper { width: auto; padding: 0px 10px; }
   .wrapper form fieldset { padding: 10px; }
   .wrapper form label { display: block; float: none; text-align: left; }
-  .wrapper pre { width: 455px; float: left; }
+  .wrapper pre { width: 100%; float: left; }
   .nav { display: none; }
   pre code { width: 100%; }
   table { word-break: break-word; }
@@ -20,28 +19,24 @@
 
   .headingblock { background-position-y: 40px !important; }
   .wrapper .main,
-  .wrapper .col-2.aside { padding: 0px; }
+  .wrapper .col-2.aside { width: 100%; padding: 0px; clear: both; overflow: hidden; }
   .wrapper .pullout { float: left; margin: 0px 0px 10px; padding: 10px 0px 10px 10px; position: static; left: 0px; width: 95%; }
   #newsbanner { display: none; }
   .wrapper  .banner { clear: both; padding: 0px; }
+  .header #headingtext { background: #036; padding: 15px; }
   .header #headingtext img { display: none; }
   .wrapper img { max-width: 100%; }
 
   ul.news li { width: 100%; }
   ul.news li a { width: 45%; }
 
-  .wrapper .page-preview { float: left; border-bottom: 1px solid $blockquote; }
-  .wrapper .page-preview h2 { margin: 0px; }
-  .wrapper .page-preview img { clear: both; }
-  .wrapper .page-preview p.button { margin-bottom: 20px; }
+  body .page-preview { float: left; width: 45%; margin-right: 2%; border-bottom: 1px solid $blockquote; }
+  body .page-preview h2 { margin: 0px; }
+  body .page-preview p { float: left; font-size: 11px; }
+  body .page-preview img { clear: both; }
+  body .page-preview .button { display: block; width: 35%; clear: both; float: none; margin-bottom: 20px; font-size: 12px; }
 
   .wrapper .polaroid { padding: 0px; border: 0px; box-shadow: none; -webkit-box-shadow: none; }
-
-  #g-global-search #g-translate-button { display: none; }
-  body #footernav #footer-connect-title { display: none; }
-  body #g-header #g-global-menu { margin-right: 0px; }
-  body #g-header #g-global-menu li a { font-size: 19px; white-space: nowrap; }
-  body #g-header #g-global-menu-label { display:none;}
 
   .col-1,
   .col-2,
@@ -67,7 +62,7 @@
   .footer .col-9,
   .footer .col-10,
   .footer .col-11,
-  .footer .col-12 { margin-left: 20px; width: 45%; }
+  .footer .col-12 { margin-left: 2%; width: 45%; }
 
   .wrapper .push-1,
   .wrapper .push-2,
@@ -94,4 +89,9 @@
   .wrapper form .col-10,
   .wrapper form .col-11,
   .wrapper form .col-12 { width: auto; margin: 0px; }
+}
+
+@media screen and (max-width: 480px) {
+  body .header .hgroup h1 { font-size: 24px; line-height: 1.5; padding-top: 30px; }
+  body .page-preview { width: 80%; }
 }

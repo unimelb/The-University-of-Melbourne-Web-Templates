@@ -430,12 +430,9 @@ button {
   src: url("../fonts/droidsansmono-webfont.eot");
   src: url("../fonts/droidsansmono-webfont.eot?#iefix") format("eot"), url("../fonts/droidsansmono-webfont.woff") format("woff"), url("../fonts/droidsansmono-webfont.ttf") format("truetype"), url("../fonts/droidsansmono-webfont.svg#webfontcbE9jlbh") format("svg"); }
 
-@media screen and (max-width: 480px) {
-  body {
-    font-size: 92%; }
-
+@media screen and (max-width: 630px) {
   .wrapper {
-    width: 455px;
+    width: auto;
     padding: 0px 10px; }
 
   .wrapper form fieldset {
@@ -447,7 +444,7 @@ button {
     text-align: left; }
 
   .wrapper pre {
-    width: 455px;
+    width: 100%;
     float: left; }
 
   .nav {
@@ -478,7 +475,10 @@ button {
 
   .wrapper .main,
   .wrapper .col-2.aside {
-    padding: 0px; }
+    width: 100%;
+    padding: 0px;
+    clear: both;
+    overflow: hidden; }
 
   .wrapper .pullout {
     float: left;
@@ -495,6 +495,10 @@ button {
     clear: both;
     padding: 0px; }
 
+  .header #headingtext {
+    background: #036;
+    padding: 15px; }
+
   .header #headingtext img {
     display: none; }
 
@@ -507,37 +511,35 @@ button {
   ul.news li a {
     width: 45%; }
 
-  .wrapper .page-preview {
+  body .page-preview {
     float: left;
+    width: 45%;
+    margin-right: 2%;
     border-bottom: 1px solid #dfe9f4; }
 
-  .wrapper .page-preview h2 {
+  body .page-preview h2 {
     margin: 0px; }
 
-  .wrapper .page-preview img {
+  body .page-preview p {
+    float: left;
+    font-size: 11px; }
+
+  body .page-preview img {
     clear: both; }
 
-  .wrapper .page-preview p.button {
-    margin-bottom: 20px; }
+  body .page-preview .button {
+    display: block;
+    width: 35%;
+    clear: both;
+    float: none;
+    margin-bottom: 20px;
+    font-size: 12px; }
 
   .wrapper .polaroid {
     padding: 0px;
     border: 0px;
     box-shadow: none;
     -webkit-box-shadow: none; }
-
-  #g-global-search #g-translate-button {
-    display: none; }
-
-  body #footernav #footer-connect-title {
-    display: none; }
-
-  body #g-header #g-global-menu {
-    margin-right: 0px; }
-
-  body #g-header #g-global-menu li a {
-    font-size: 19px;
-    white-space: nowrap; }
 
   .col-1,
   .col-2,
@@ -568,7 +570,7 @@ button {
   .footer .col-10,
   .footer .col-11,
   .footer .col-12 {
-    margin-left: 20px;
+    margin-left: 2%;
     width: 45%; }
 
   .wrapper .push-1,
@@ -599,6 +601,15 @@ button {
   .wrapper form .col-12 {
     width: auto;
     margin: 0px; } }
+
+@media screen and (max-width: 480px) {
+  body .header .hgroup h1 {
+    font-size: 24px;
+    line-height: 1.5;
+    padding-top: 30px; }
+
+  body .page-preview {
+    width: 80%; } }
 
 body {
   background: url("../images/backgrounds/blue-blur.jpg") repeat-x 50% 0%;
