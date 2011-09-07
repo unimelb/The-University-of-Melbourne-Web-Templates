@@ -23,8 +23,9 @@
   .wrapper .pullout { float: left; margin: 0px 0px 10px; padding: 10px 0px 10px 10px; position: static; left: 0px; width: 95%; }
   #newsbanner { display: none; }
   .wrapper  .banner { clear: both; padding: 0px; }
-  .header #headingtext { background: #036; padding: 15px; }
-  .header #headingtext img { display: none; }
+  .header #headingtext { background: rgb(0, 51, 102); background: rgba(0, 51, 102, 0.8); padding: 15px; border-radius: 8px; }
+  body .header #headingtext p { margin-left: 0px; }
+  .header #headingtext img, .header #headingtext p.title { display: none; }
   .wrapper img { max-width: 100%; }
 
   ul.news li { width: 100%; }
@@ -33,7 +34,7 @@
   body .page-preview { float: left; width: 45%; margin-right: 2%; border-bottom: 1px solid $blockquote; }
   body .page-preview h2 { margin: 0px; }
   body .page-preview p { float: left; font-size: 11px; }
-  body .page-preview img { clear: both; }
+  body .page-preview img { clear: both; width: 100%; }
   body .page-preview .button { display: block; width: 35%; clear: both; float: none; margin-bottom: 20px; font-size: 12px; }
 
   .wrapper .polaroid { padding: 0px; border: 0px; box-shadow: none; -webkit-box-shadow: none; }

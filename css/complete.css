@@ -496,10 +496,15 @@ button {
     padding: 0px; }
 
   .header #headingtext {
-    background: #036;
-    padding: 15px; }
+    background: #003366;
+    background: rgba(0, 51, 102, 0.8);
+    padding: 15px;
+    border-radius: 8px; }
 
-  .header #headingtext img {
+  body .header #headingtext p {
+    margin-left: 0px; }
+
+  .header #headingtext img, .header #headingtext p.title {
     display: none; }
 
   .wrapper img {
@@ -525,7 +530,8 @@ button {
     font-size: 11px; }
 
   body .page-preview img {
-    clear: both; }
+    clear: both;
+    width: 100%; }
 
   body .page-preview .button {
     display: block;
