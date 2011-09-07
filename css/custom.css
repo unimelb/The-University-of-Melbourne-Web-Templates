@@ -1,1 +1,11 @@
 /*  Used to manage your own custom styles  */
+
+/*  Used to manage your own mobile styles  */
+/*  iPhone-horizontal */
+@media screen and (max-width: 630px) {
+
+}
+/*  iPhone-vertical */
+@media screen and (max-width: 480px) {
+
+}
