@@ -298,10 +298,10 @@ a.document em { display: inline; color: $blockquote; padding-left: 7px; font-siz
 #newsbanner {
   @include polaroid;
   width: 930px; clear: both; overflow: hidden; margin: 0px 0px -15px 15px !important; }
-#newsbanner .banner { width: 680px; height: 300px; }
-#newsbanner #banner-clip { width: 680px; height: 300px; overflow: hidden; position: relative; float: left; }
+#newsbanner .banner { width: 100%; }
+#newsbanner #banner-clip { width: 74%; overflow: hidden; position: relative; float: left; }
 
-#newsbanner ol { counter-reset: section; font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; padding-left: 0px; margin: 0px; color: $darkgrey; width: 245px; float: right; list-style: none; }
+#newsbanner ol { counter-reset: section; font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; padding-left: 0px; margin: 0px; color: $darkgrey; width: 25%; float: right; list-style: none; }
 #newsbanner ol li { border-bottom: 1px solid darken($lightgrey, 2%); line-height: 1.4; padding-left: 28px; padding-right: 0px; margin: 0px; position: relative;
   &:last-child { border-bottom: none; }
   &:hover,
@@ -309,16 +309,17 @@ a.document em { display: inline; color: $blockquote; padding-left: 7px; font-siz
   &.selected { background: lighten($lightbluetext,44%); color: transparentize($darkbluetext, 0.1); }
   &.selected a,
   &:hover a, &:focus a { color: transparentize($darkbluetext, 0.1); } }
-#newsbanner ol li:before { counter-increment: section; content: counter(section) "."; position: absolute; top: 8px; left: 16px; }
-#newsbanner ol li a { display: block; height: 66px; text-decoration: none; padding: 8px 5px 0px 5px; font-weight: bold; font-size: 14px; color: darken($darkgrey, 10%); }
+#newsbanner ol li:before { counter-increment: section; content: counter(section) "."; position: absolute; top: 10px; left: 16px; font-size: 0.5em; }
+#newsbanner ol li a { display: block; height: 4em; text-decoration: none; padding: 8px 5px 0px 5px; font-weight: bold; font-size: 0.6em; color: darken($darkgrey, 10%); }
 
-.banner { position: relative; overflow: hidden; }
-.banner img { display: block; }
+.banner { width: 150%; position: relative; overflow: hidden; }
+.banner img { display: block; width: 100%; }
 .banner .banner-text { position: absolute; left: 0px; bottom: 0px; width: 100%; background: rgb(49, 71, 120); background: rgba(49, 71, 120, 0.8); padding: 10px 0px; pointer-events: none; }
 .banner .banner-text h2,
 .banner .banner-text p { margin-left: 20px; padding-top: 0px; color: #fff; }
-.banner .banner-text h2 a { font-size: 16px; color: $blockquote; border: 0px; }
-.banner .banner-text p a { font-size: 28px; font-weight: normal; padding: 5px 0px; color: #fff; line-height: 1.3; letter-spacing: 1px; border: 0px; }
+.banner .banner-text h2 { font-size: 0.8em; }
+.banner .banner-text h2 a { font-size: 1em; color: $blockquote; border: 0px; }
+.banner .banner-text p a { font-size: 1.1em; font-weight: normal; padding: 5px 0px; color: #fff; line-height: 1.3; letter-spacing: 1px; border: 0px; }
 
 .polaroid { @include polaroid; }
 

@@ -488,9 +488,6 @@ button {
     left: 0px;
     width: 95%; }
 
-  #newsbanner {
-    display: none; }
-
   .wrapper .banner {
     clear: both;
     padding: 0px; }
@@ -509,6 +506,51 @@ button {
 
   .wrapper img {
     max-width: 100%; }
+
+  body #newsbanner {
+    margin-left: 0px !important; }
+
+  body #newsbanner #banner-clip {
+    width: 100%; }
+
+  body .banner .banner-text {
+    padding: 5px 0px; }
+
+  body .banner .banner-text h2 {
+    margin: 5px;
+    padding: 0px;
+    line-height: 0.5em; }
+
+  body .banner .banner-text p {
+    display: none; }
+
+  body #newsbanner ol {
+    clear: both;
+    width: 100%;
+    list-style: none;
+    margin: 7px 0px 0px; }
+
+  body #newsbanner ol li {
+    float: left;
+    padding: 0px 5px 3px;
+    margin: 3px 0px 0px;
+    border: 0px; }
+
+  body #newsbanner ol li a {
+    display: inline;
+    height: auto;
+    font-size: 0.9em;
+    text-decoration: underline;
+    font-weight: normal;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 0px;
+    border: 0px; }
+
+  body #newsbanner ol li.selected a {
+    text-decoration: none; }
+
+  body #newsbanner ol li:before {
+    content: ""; }
 
   ul.news li {
     width: 100%; }
@@ -1564,12 +1606,10 @@ a.document em {
   margin: 0px 0px -15px 15px !important; }
 
 #newsbanner .banner {
-  width: 680px;
-  height: 300px; }
+  width: 100%; }
 
 #newsbanner #banner-clip {
-  width: 680px;
-  height: 300px;
+  width: 74%;
   overflow: hidden;
   position: relative;
   float: left; }
@@ -1580,7 +1620,7 @@ a.document em {
   padding-left: 0px;
   margin: 0px;
   color: #686868;
-  width: 245px;
+  width: 25%;
   float: right;
   list-style: none; }
 
@@ -1603,24 +1643,27 @@ a.document em {
   counter-increment: section;
   content: counter(section) ".";
   position: absolute;
-  top: 8px;
-  left: 16px; }
+  top: 10px;
+  left: 16px;
+  font-size: 0.5em; }
 
 #newsbanner ol li a {
   display: block;
-  height: 66px;
+  height: 4em;
   text-decoration: none;
   padding: 8px 5px 0px 5px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.6em;
   color: #4e4e4e; }
 
 .banner {
+  width: 150%;
   position: relative;
   overflow: hidden; }
 
 .banner img {
-  display: block; }
+  display: block;
+  width: 100%; }
 
 .banner .banner-text {
   position: absolute;
@@ -1638,13 +1681,16 @@ a.document em {
   padding-top: 0px;
   color: #fff; }
 
+.banner .banner-text h2 {
+  font-size: 0.8em; }
+
 .banner .banner-text h2 a {
-  font-size: 16px;
+  font-size: 1em;
   color: #dfe9f4;
   border: 0px; }
 
 .banner .banner-text p a {
-  font-size: 28px;
+  font-size: 1.1em;
   font-weight: normal;
   padding: 5px 0px;
   color: #fff;
