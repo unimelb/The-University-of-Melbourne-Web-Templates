@@ -14,6 +14,16 @@ function contentLoaded(a,b){var c=!1,d=!0,e=a.document,f=e.documentElement,g=e.a
 Navigation = (function() {
 
   return {
+    // getElementByClassName helper method
+    // This returns a single element from a list of provided nodes
+    // It is worth noting, that standard getElementsByClassName functionality
+    // is not what we need here
+    getElementByClassName: function(elements, className) {
+      var re = new RegExp('(\\s|^)'+className+'(\\s|$)');
+      for (var i = 0, ii = elements.length; i < ii; i++) {
+        if (re.test(elements[i].className)) return elements[i];
+      }
+    },
     // A helper method to find direct descendents of a specific node type
     findChildrenByTag: function(children, tag) {
       var matches = [];
@@ -25,36 +35,50 @@ Navigation = (function() {
     // Used to hide sub-sub-navigation children
     hideChildren: function(li) {
       li.className = li.className.replace(/\sopen/, ' closed');
-      var a = getElementByClassName(li.childNodes, 'more');
+      var a = Navigation.getElementByClassName(li.childNodes, 'more');
       if (a) a.innerHTML = 'More';
       return false;
     },
     // Used to show sub-sub-navigation children
     showChildren: function(li) {
       li.className = li.className.replace(/\sclosed/, ' open');
-      var a = getElementByClassName(li.childNodes, 'more');
+      var a = Navigation.getElementByClassName(li.childNodes, 'more');
       if (a) a.innerHTML = 'Less';
       return false;
     },
-    // The main initialisation method, this is called on contentLoaded
-    init: function() {
-      // For browser widths of less than 480, we build a mobile version 
+    // Global shortcut to build the mobile navigation if necessary
+    testMobile: function() {
+      // For browser widths of less than 540, we build a mobile version 
       // of the navigation,
-      if (document.body.offsetWidth < 480) buildMobileNavigation();
+      if (document.body.offsetWidth <= 630) buildMobileNavigation();
       // otherwise we build our nested nav
       else buildNestedNav();
+    },
+    resizeNavTest: function() {
+      var mobileNav = Navigation.getElementByClassName(document.getElementsByTagName('div'), 'mobile-nav');
+
+      if (document.body.offsetWidth <= 630) {
+        if (typeof mobileNav != 'undefined') {
+          mobileNav.style.display = 'block';
+        } else {
+          buildMobileNavigation();
+        }
+      } else if (typeof mobileNav != 'undefined') {
+        mobileNav.style.display = 'none';
+      }
+
+    },
+    // The main initialisation method, this is called on contentLoaded
+    init: function() {
+      // Initialise navigation
+      Navigation.testMobile();
+      // Watch the window resize event to see if we need to enable the
+      // mobile-optimised version of the navigation
+      window.onresize = function() {
+        Navigation.resizeNavTest();
+      }
     }
 
-  }
-  // getElementByClassName helper method
-  // This returns a single element from a list of provided nodes
-  // It is worth noting, that standard getElementsByClassName functionality
-  // is not what we need here
-  function getElementByClassName(elements, className) {
-    var re = new RegExp('(\\s|^)'+className+'(\\s|$)');
-    for (var i = 0, ii = elements.length; i < ii; i++) {
-      if (re.test(elements[i].className)) return elements[i];
-    }
   }
   // A recursive method used contruct a json representation of a UL
   // We use it to store the main UL navigation structure
@@ -89,11 +113,11 @@ Navigation = (function() {
   // Build and inject a selectbox version of the navigation for mobile devices
   function buildMobileNavigation() {
     var allDivs = document.getElementsByTagName('div'),
-        header = getElementByClassName(allDivs, 'header'),
+        header = Navigation.getElementByClassName(allDivs, 'header'),
         breadcrumbs = document.getElementById('breadcrumbs'),
         // This is designed to work with our standard templates & the
         // override, so if .nav doesn't exist, then we look for #menu instead
-        nav = getElementByClassName(allDivs, 'nav') || document.getElementById('menu'),
+        nav = Navigation.getElementByClassName(allDivs, 'nav') || document.getElementById('menu'),
         ul = nav.getElementsByTagName('ul')[0];
 
     // If no nav was found, then bail out of the rest of this method
@@ -134,7 +158,7 @@ Navigation = (function() {
   }
 
   function buildNestedNav() {
-    var nav = getElementByClassName(document.getElementsByTagName('div'), 'nav') || document.getElementById('menu');
+    var nav = Navigation.getElementByClassName(document.getElementsByTagName('div'), 'nav') || document.getElementById('menu');
     // If the nav doesn't exist, then return
     if (!nav) return;
     // We use event delegation to handle the click events, so the click
