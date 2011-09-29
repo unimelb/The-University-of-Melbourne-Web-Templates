@@ -142,7 +142,7 @@
   // Show or hide the sub navigation
   function toggleNav(e) {
     // Bind the click event for IE
-    var e = e || window.event,
+    var e = (!e) ? window.event : e,
         target = e.target || e.srcElement;
     // We're using event delegation here, so only run this method if the 
     // target has a class of 'more'
@@ -152,7 +152,6 @@
     // and vice-versa
     else Navigation.hideChildren(target.parentNode);
     // Prevent the default link action
-    e.preventDefault();
     return false;
   }
 
