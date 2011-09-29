@@ -32,7 +32,7 @@ $(function() {
     // The dimensions for all of the banner sub-elements are defined in ems,
     // so we can resize everything in scale by setting the font-size property
     // on #newsbanner (the parent)
-    $('#newsbanner').css('font-size', Math.floor(bannerHeight / 1.5) + '%');
+    $('#newsbanner').css('font-size', Math.floor(bannerHeight / 1.5) + '%').css('height', bannerHeight);
     // The wrapper overflow sizes need to be set manually to match the image
     $('#banner-clip', newsbanner).css('height', bannerHeight);
     wrapper.css('height', bannerHeight);
