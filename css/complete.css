@@ -430,34 +430,6 @@ button {
   src: url("../fonts/droidsansmono-webfont.eot");
   src: url("../fonts/droidsansmono-webfont.eot?#iefix") format("eot"), url("../fonts/droidsansmono-webfont.woff") format("woff"), url("../fonts/droidsansmono-webfont.ttf") format("truetype"), url("../fonts/droidsansmono-webfont.svg#webfontcbE9jlbh") format("svg"); }
 
-@media screen and (max-width: 979px) {
-  body {
-    -webkit-text-size-adjust: none; }
-
-  #main-content {
-    width: 73%; }
-
-  .aside {
-    width: 22%;
-    margin-left: 2%; }
-
-  #main-content .col-2 {
-    width: 31%;
-    margin-left: 3%; }
-
-  #main-content .first {
-    margin-left: 0%; }
-
-  #main-content .col-2 img {
-    max-width: 100%; }
-
-  pre {
-    max-width: 97% !important; }
-
-  table {
-    word-break: break-word;
-    max-width: 97% !important; } }
-
 @media screen and (max-width: 630px) {
   .mobile-nav {
     margin-top: 30px; }
@@ -494,6 +466,19 @@ button {
 
   h1 + h2 {
     margin-top: 0em; }
+
+  #main-content .first {
+    margin-left: 0%; }
+
+  #main-content .col-2 img {
+    max-width: 100%; }
+
+  pre {
+    max-width: 97% !important; }
+
+  table {
+    word-break: break-word;
+    max-width: 97% !important; }
 
   .headingblock {
     background-position-y: 40px !important; }
@@ -1803,15 +1788,6 @@ body.yellow-home #headingtext p.title {
   -moz-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
   -o-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
   color: #003366; }
-
-/*  Responsive Layout  */
-.wrapper {
-  width: auto;
-  max-width: 960px; }
-
-#newsbanner {
-  width: auto;
-  max-width: 930px; }
 
 /*  IE Fixes  */
 .header .hgroup p {
