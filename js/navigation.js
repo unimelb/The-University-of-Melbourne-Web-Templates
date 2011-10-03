@@ -69,6 +69,8 @@
     },
     // The main initialisation method, this is called on contentLoaded
     init: function() {
+      // Highlight current nav item
+      highlightCurrentNavItem();
       // Initialise navigation
       Navigation.testMobile();
       // Watch the window resize event to see if we need to enable the
@@ -79,6 +81,32 @@
     }
 
   }
+  // Add a current-parent class to any corresponding parent nodes
+  function highlightParents(parent, nav) {
+    while (parent !== nav) {
+      if (parent.nodeName == 'LI') {
+        var a = Navigation.findChildrenByTag(parent.childNodes, 'A');
+        a[0].className += ' current-parent';
+      }
+      parent = parent.parentNode;
+    }
+  }
+  // Add a current class to the current navigation item
+  function highlightCurrentNavItem() {
+    var allDivs = document.getElementsByTagName('div'),
+        nav = Navigation.getElementByClassName(allDivs, 'nav') || document.getElementById('menu'),
+        as = nav.getElementsByTagName('a'),
+        cleanUrl = document.location.href.split('#')[0];
+    for (var cleanHref, i = 0, ii = as.length; i < ii; i++) {
+      cleanHref = as[i].href.split('#')[0];
+      if (cleanUrl == cleanHref) {
+        as[i].className = 'current';
+        highlightParents(as[i].parentNode.parentNode, nav);
+        break;
+      }
+    }
+  }
+
   // A recursive method used contruct a json representation of a UL
   // We use it to store the main UL navigation structure
   function buildList(targets) {
