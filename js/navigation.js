@@ -94,8 +94,11 @@
   // Add a current class to the current navigation item
   function highlightCurrentNavItem() {
     var allDivs = document.getElementsByTagName('div'),
-        nav = Navigation.getElementByClassName(allDivs, 'nav') || document.getElementById('menu'),
-        as = nav.getElementsByTagName('a'),
+        nav = Navigation.getElementByClassName(allDivs, 'nav') || document.getElementById('menu');
+
+    if (!nav) return;
+
+    var as = nav.getElementsByTagName('a'),
         cleanUrl = document.location.href.split('#')[0];
     for (var cleanHref, i = 0, ii = as.length; i < ii; i++) {
       cleanHref = as[i].href.split('#')[0];
