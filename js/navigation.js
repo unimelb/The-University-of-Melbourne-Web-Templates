@@ -116,15 +116,14 @@
         breadcrumbs = document.getElementById('breadcrumbs'),
         // This is designed to work with our standard templates & the
         // override, so if .nav doesn't exist, then we look for #menu instead
-        nav = Navigation.getElementByClassName(allDivs, 'nav') || document.getElementById('menu'),
-        ul = nav.getElementsByTagName('ul')[0];
+        nav = Navigation.getElementByClassName(allDivs, 'nav') || document.getElementById('menu');
 
     // If no nav was found, then bail out of the rest of this method
     if (!nav) return;
 
     // Build up the select box
     var html = '<select onchange="document.location.href = options[selectedIndex].value;">',
-        list = buildList(ul.childNodes);
+        list = buildList(nav.getElementsByTagName('ul')[0].childNodes);
     html += buildSelect(list);
     html += '</select>';
 
