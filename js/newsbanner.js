@@ -45,12 +45,14 @@ $(function() {
     resizeBanners();
   }
 
-  // Once the image has loaded, we can reference its width and height
-  var image = $('#newsbanner .banner img').first();
-  // Reset the src to ensure the load event fires
-  image.load(imageLoad).attr('src', image.attr('src'));
-  // Resize the banners on page resize (throttled to run every 50ms)
-  $(window).resize( $.throttle(50, resizeBanners) );
+  if (!!newsbanner.length) {
+    // Once the image has loaded, we can reference its width and height
+    var image = $('#newsbanner .banner img').first();
+    // Reset the src to ensure the load event fires
+    image.load(imageLoad).attr('src', image.attr('src'));
+    // Resize the banners on page resize (throttled to run every 50ms)
+    $(window).resize( $.throttle(50, resizeBanners) );
+  }
 
   // Tab-based navigation
   $('> a', banners).focus(function() {
