@@ -1,19 +1,18 @@
 /*
-  A short (minifed) chunk of code to provide a cross-browser domready event
-  The technique is nabbed from: https://github.com/dperini/ContentLoaded/
-*/
-function contentLoaded(a,b){var c=!1,d=!0,e=a.document,f=e.documentElement,g=e.addEventListener?"addEventListener":"attachEvent",h=e.addEventListener?"removeEventListener":"detachEvent",i=e.addEventListener?"":"on",j=function(d){if(d.type!="readystatechange"||e.readyState=="complete")(d.type=="load"?a:e)[h](i+d.type,j,!1),!c&&(c=!0)&&b.call(a,d.type||d)},k=function(){try{f.doScroll("left")}catch(a){setTimeout(k,50);return}j("poll")};if(e.readyState=="complete")b.call(a,"lazy");else{if(e.createEventObject&&f.doScroll){try{d=!a.frameElement}catch(l){}d&&k()}e[g](i+"DOMContentLoaded",j,!1),e[g](i+"readystatechange",j,!1),a[g](i+"load",j,!1)}}
-
-
-/*
   The main Navigation object
   Its purpose is to initialise showing/hiding third level nested navigation
   and creating a selectbox version of the navigation for mobile devices
 */
 
-Navigation = (function() {
+(function() {
 
-  return {
+  /*
+    A short (minifed) chunk of code to provide a cross-browser domready event
+    The technique is nabbed from: https://github.com/dperini/ContentLoaded/
+  */
+  function contentLoaded(a,b){var c=!1,d=!0,e=a.document,f=e.documentElement,g=e.addEventListener?"addEventListener":"attachEvent",h=e.addEventListener?"removeEventListener":"detachEvent",i=e.addEventListener?"":"on",j=function(d){if(d.type!="readystatechange"||e.readyState=="complete")(d.type=="load"?a:e)[h](i+d.type,j,!1),!c&&(c=!0)&&b.call(a,d.type||d)},k=function(){try{f.doScroll("left")}catch(a){setTimeout(k,50);return}j("poll")};if(e.readyState=="complete")b.call(a,"lazy");else{if(e.createEventObject&&f.doScroll){try{d=!a.frameElement}catch(l){}d&&k()}e[g](i+"DOMContentLoaded",j,!1),e[g](i+"readystatechange",j,!1),a[g](i+"load",j,!1)}}
+
+  var Navigation = {
     // getElementByClassName helper method
     // This returns a single element from a list of provided nodes
     // It is worth noting, that standard getElementsByClassName functionality
@@ -190,6 +189,6 @@ Navigation = (function() {
     li.insertBefore(a, ul);
   }
 
-})();
+  contentLoaded(this, Navigation.init);
 
-contentLoaded(this, Navigation.init);
+})();
