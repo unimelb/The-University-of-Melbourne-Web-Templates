@@ -19,6 +19,7 @@ $column-count: 8;
 $gutter-width: 20px;
 $container-width: 940px + $gutter-width;
 $column-width: ($container-width / $column-count) - $gutter-width;
+$show-grid: false !default;
 
 @mixin visible_grid {
   outline: 2px solid rgba(0, 0, 255, 0.2);
