@@ -19,7 +19,8 @@ $column-count: 8;
 $gutter-width: 20px;
 $container-width: 940px + $gutter-width;
 $column-width: ($container-width / $column-count) - $gutter-width;
-$show-grid: false !default;
+$container-id: container;
+$show-grid: false;
 
 @mixin visible_grid {
   outline: 2px solid rgba(0, 0, 255, 0.2);
@@ -42,23 +43,29 @@ $show-grid: false !default;
 
 @mixin column($count: 1) {
   width: (($column-width + $gutter-width) * $count) - $gutter-width;
+  float: left; display: inline;
   margin-left: $gutter-width;
-  display: block;
-  float: left;
-  display: inline;
+
   @if $show-grid != false {
     outline: 2px solid rgba(0, 0, 255, 0.5);
   }
 }
 
 @for $i from 1 through $column-count {
-  .col-#{$i} { @include column($i); }
-}
-@for $i from 1 through $column-count {
-  .push-#{$i} { margin-left: (($column-width + $gutter-width) * $i) + $gutter-width; }
+  .col-#{$i} {
+    @include column($i); }
+  .col-#{$i}.first {
+    margin-left: 0px; }
 }
 
-.first { margin-left: 0px; }
+@for $i from 1 through $column-count {
+  .push-#{$i},
+  .push-#{$i}.first {
+    margin-left: (($column-width + $gutter-width) * $i) + $gutter-width; }
+  .push-#{$i}.first {
+    position: relative; left: -20px; }
+}
+
 .colborder { padding-right: 9px; margin-right: -11px; border-right: 1px solid #EDEDED; }
 
 .wrapper {

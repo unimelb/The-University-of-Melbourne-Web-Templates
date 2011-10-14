@@ -1,56 +1,121 @@
 @media screen and (max-width: 630px) {
-  .mobile-nav { margin-top: 30px; }
-  .mobile-nav select { padding: 6px 3px; }
 
-  .wrapper { width: auto; padding: 0px 10px; }
-  .wrapper form fieldset { padding: 10px; }
-  .wrapper form label { display: block; float: none; text-align: left; }
-  .wrapper pre { width: 100%; float: left; }
-  .nav { display: none; }
+  .mobile-nav { 
+    margin-top: 30px; }
+  .mobile-nav select {
+    padding: 6px 3px; }
+
+  .wrapper {
+    width: auto;
+    padding: 0px 10px;
+
+    form fieldset {
+      padding: 10px; }
+    form label {
+      display: block; float: none;
+      text-align: left; }
+    pre {
+      float: left;
+      width: 100%; }
+  }
+  .nav {
+    display: none; }
 
   h1,
   h2,
   h3,
-  h4 { margin-top: 2em; margin-bottom: 0.5em; }
+  h4 {
+    margin-top: 2em; margin-bottom: 0.5em; }
 
   .header .hgroup h1,
-  .header .hgroup h2 { margin-top: 0px; }
+  .header .hgroup h2 {
+    margin-top: 0px; }
 
-  h1 + h2 { margin-top: 0em; }
+  h1 + h2 {
+    margin-top: 0em; }
 
-  #main-content .first { margin-left: 0%; }
-  #main-content .col-2 img { max-width: 100%; }
-  pre { max-width: 97% !important; }
-  table { word-break: break-word; max-width: 97% !important; }
+  #main-content .first {
+    margin-left: 0%; }
+  #main-content .col-2 img {
+    max-width: 100%; }
+  pre {
+    max-width: 97% !important; }
+  table {
+    word-break: break-word; max-width: 97% !important; }
 
-  .headingblock { background-position-y: 40px !important; }
+  .headingblock {
+    background-position-y: 40px !important; }
+
   .wrapper .main,
-  .wrapper .col-2.aside { width: 100%; padding: 0px; clear: both; overflow: hidden; }
-  .wrapper .pullout { float: left; margin: 0px 0px 10px; padding: 10px 0px 10px 10px; position: static; left: 0px; width: 95%; }
-  .wrapper  .banner { clear: both; padding: 0px; }
-  .header #headingtext { display: none; background: rgb(0, 51, 102); background: rgba(0, 51, 102, 0.8); padding: 15px; border-radius: 8px; }
-  body .header #headingtext p { margin-left: 0px; }
-  .header #headingtext img, .header #headingtext p.title { display: none; }
-  .wrapper img { max-width: 100%; }
+  .wrapper .col-2.aside {
+    clear: both; overflow: hidden;
+    width: 100%;
+    padding: 0px; }
+  .wrapper .pullout {
+    position: static; left: 0px; width: 95%;
+    float: left;
+    margin: 0px 0px 10px; padding: 10px 0px 10px 10px; }
+  .wrapper  .banner {
+    clear: both;
+    padding: 0px; }
+  .header #headingtext {
+    display: none;
+    padding: 15px;
+    background: rgb(0, 51, 102); background: rgba(0, 51, 102, 0.8);
+    @include border-radius(8px); }
+  body .header #headingtext p {
+    margin-left: 0px; }
+  .header #headingtext img,
+  .header #headingtext p.title {
+    display: none; }
+  .wrapper img {
+    max-width: 100%; }
 
-  #main-content { width: 100%; }
+  #main-content {
+    width: 100%; }
 
-  body #newsbanner { margin-left: 0px !important;}
+  body #newsbanner {
+    margin-left: 0px !important;}
 
-  body #newsbanner ol li { padding-left: 3px; }
-  body #newsbanner ol li a { font-size: 0.7em; height: auto; padding-bottom: 4px; }
-  body #newsbanner ol li:before { content: ""; }
+  body #newsbanner ol li {
+    padding-left: 3px; }
+  body #newsbanner ol li a {
+    height: auto;
+    padding-bottom: 4px;
+    font-size: 0.7em; }
+  body #newsbanner ol li:before {
+    content: ""; }
 
-  ul.news li { width: 100%; }
-  ul.news li a { width: 45%; }
+  ul.news li {
+    width: 100%; }
+  ul.news li a {
+    width: 45%; }
 
-  body .page-preview { float: left; width: 45%; margin-right: 2%; border-bottom: 1px solid $blockquote; }
-  body .page-preview h2 { margin: 0px; }
-  body .page-preview p { float: left; font-size: 11px; }
-  body .page-preview img { clear: both; max-width: 100%; }
-  body .page-preview .button { display: block; width: 35%; clear: both; float: none; margin-bottom: 20px; font-size: 12px; }
+  body .page-preview {
+    float: left;
+    width: 45%;
+    margin-right: 2%;
+    border-bottom: 1px solid $blockquote;
+    h2 {
+      margin: 0px; }
+    p {
+      float: left;
+      font-size: 11px; }
+    img {
+      clear: both;
+      max-width: 100%; }
+    .button {
+      display: block;
+      clear: both; float: none;
+      width: 35%;
+      margin-bottom: 20px;
+      font-size: 12px; }
+  }
 
-  .wrapper .polaroid { padding: 0px; border: 0px; box-shadow: none; -webkit-box-shadow: none; }
+  .wrapper .polaroid {
+    @include box-shadow(0px, 0px, 0px, transparent);
+    padding: 0px;
+    border: 0px; }
 
   .col-1,
   .col-2,
@@ -63,7 +128,10 @@
   .col-9,
   .col-10,
   .col-11,
-  .col-12 { width: auto; margin-bottom: 15px; margin-left: 0px; float: none; }
+  .col-12 {
+    float: none;
+    width: auto;
+    margin-bottom: 15px; margin-left: 0px; }
 
   .footer .col-1,
   .footer .col-2,
@@ -76,7 +144,9 @@
   .footer .col-9,
   .footer .col-10,
   .footer .col-11,
-  .footer .col-12 { margin-left: 2%; width: 45%; }
+  .footer .col-12 {
+    width: 45%;
+    margin-left: 2%; }
 
   .wrapper .push-1,
   .wrapper .push-2,
@@ -89,7 +159,8 @@
   .wrapper .push-9,
   .wrapper .push-10,
   .wrapper .push-11,
-  .wrapper .push-12 { margin: 0px; }
+  .wrapper .push-12 {
+    margin: 0px; }
 
   .wrapper form .col-1,
   .wrapper form .col-2,
@@ -102,13 +173,21 @@
   .wrapper form .col-9,
   .wrapper form .col-10,
   .wrapper form .col-11,
-  .wrapper form .col-12 { width: auto; margin: 0px; }
+  .wrapper form .col-12 {
+    width: auto; margin: 0px; }
 }
 
 @media screen and (max-width: 480px) {
-  body .header .hgroup h1 { font-size: 24px; line-height: 1.5; padding-top: 30px; }
-  body .page-preview { width: 80%; }
-  body #newsbanner ol li a { font-size: 0.8em; }
 
-  #main-content .col-2 { width: 100%; margin-left: 0%; }
+  body .header .hgroup h1 {
+    padding-top: 30px;
+    font-size: 24px; line-height: 1.5; }
+  body .page-preview {
+    width: 80%; }
+  body #newsbanner ol li a {
+    font-size: 0.8em; }
+
+  #main-content .col-2 {
+    width: 100%;
+    margin-left: 0%; }
 }

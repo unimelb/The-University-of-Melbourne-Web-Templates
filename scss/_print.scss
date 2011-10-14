@@ -1,20 +1,62 @@
 @media print {
-  * { background: white !important; text-shadow: none !important; color:black !important; border-color:#d0d0d0 !important;   }
-  .wrapper { width:auto !important; margin-left:auto; margin-right:auto;}
-  .header { margin-bottom:0px !important}
-  .hgroup { margin-left:20px !important; color:#000 !important;}
-  .hgroup a { color:black !important;}
-  .main { font-size:110% !important;}
-  .main a:after { content: " (" attr(href) ")"; } 
-  .main abbr:after { content: " (" attr(title) ")"; }
-  .main .ir a:after { content: ""; }  /* Don't show links for images */
-  pre, blockquote, code { border: 1px solid #d0d0d0; page-break-inside: avoid; outline: 0.5mm solid #d0d0d0 !important; }
-  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
-  tr, img { page-break-inside: avoid; }
-  @page { margin:1cm;}
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
-  #newsbanner, div.nav, .footer div#local, #footernav, #g-header{ display:none; }
-  div.aside { display:none !important; }
-  a.icon { border:0.5mm solid #d0d0d0 !important;}
+  @page {
+    margin: 1cm; }
+
+  * {
+    background: white !important; color: black !important; border-color: #d0d0d0 !important;
+    text-shadow: none !important; }
+  .wrapper {
+    width:auto !important;
+    margin-left: auto; margin-right: auto; }
+  .header {
+    margin-bottom: 0px !important;
+    .hgroup {
+      margin-left:20px !important;
+      color:#000 !important; }
+    .hgroup a {
+      color: black !important; }
+  }
+
+  .main {
+    font-size: 110% !important;
+    a:after {
+      content: " (" attr(href) ")"; } 
+    abbr:after {
+      content: " (" attr(title) ")"; }
+    .ir a:after {
+      content: ""; }  /* Don't show links for images */
+  }
+
+  pre,
+  code,
+  blockquote {
+    border: 1px solid #d0d0d0; outline: 0.5mm solid #d0d0d0 !important;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+  p,
+  h2,
+  h3 {
+    orphans: 3; widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; }
+
+  div.aside {
+    display:none !important; }
+  a.icon {
+    border: 0.5mm solid #d0d0d0 !important; }
+
+  /*  Don't print the header, footer or navigation  */
+  div.nav,
+  #g-header,
+  #footernav,
+  #newsbanner,
+  .footer div#local {
+    display: none; }
 }

@@ -24,3 +24,12 @@
        url('../fonts/droidsansmono-webfont.ttf') format('truetype'),
        url('../fonts/droidsansmono-webfont.svg#webfontcbE9jlbh') format('svg');
 }
+
+@mixin droid-sans {
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+@mixin droid-sans-mono {
+  font-family: 'droid sans mono', 'Bitstream Vera Sans Mono', 'Lucida Console', 'courier new', monospace; }
+
+@mixin sans-serif {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
