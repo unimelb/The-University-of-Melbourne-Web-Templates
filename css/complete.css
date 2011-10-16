@@ -1768,8 +1768,7 @@ a.button:visited {
       color: #4e4e4e; }
   #newsbanner .banner {
     position: relative;
-    overflow: hidden;
-    width: 150%; }
+    overflow: hidden; }
   #newsbanner .banner img {
     display: block;
     width: 100%; }
