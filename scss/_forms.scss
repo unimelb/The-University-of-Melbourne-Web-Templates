@@ -123,6 +123,14 @@ form.wbg {
     border: 1px solid darken($blockquote, 10%); background: #fafcff; }
   fieldset.errored {
     border: 1px solid desaturate(darken(#ffe6e5, 20%), 50%); background: #ffe6e5; }
+    input,
+    textarea {
+      @include inset-box-shadow(1px, 1px, 2px);
+      padding: 7px 9px; margin-bottom: 5px;
+      border: 1px solid #999; border: 1px solid rgba(0, 0, 0, 0.3);
+      &:focus {
+        border: 1px solid darken($blockquote, 35%); }
+    }
 
   .follower {
     margin: 0px; }
