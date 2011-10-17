@@ -388,51 +388,49 @@ for (var i = test_strings.length - 1; i >= 0; i--) {
       <p>Lorem ipsum.</p>
       <form class="wbg">
         <fieldset>
-          <legend>Use this form to get in contact with us</legend>
           <h4>Basic details</h4>
-          <label class="col-2 required" for="firstname">First name</label>
-          <input class="col-3" type="text" name="firstname" value="" id="firstname" placeholder="First name">
-          <label class="col-2" for="lastname">Last name</label>
-          <input class="col-3" type="text" name="lastname" value="" id="lastname" placeholder="Last Name">
-          <label class="col-2" for="email">Email address</label>
-          <input class="col-3" type="email" name="email" value="" id="email" placeholder="your@email.com">
+          <label class="col-2 required" for="firstname2">First name</label>
+          <input class="col-3" type="text" name="firstname" value="" id="firstname2" placeholder="First name">
+          <label class="col-2" for="lastname2">Last name</label>
+          <input class="col-3" type="text" name="lastname" value="" id="lastname2" placeholder="Last Name">
+          <label class="col-2" for="email2">Email address</label>
+          <input class="col-3" type="email" name="email" value="" id="email2" placeholder="your@email.com">
+          <p class="push-2"><em>Please enter a valid email address</em></p>
         </fieldset>
 
         <fieldset>
-          <legend>Gender</legend>
           <h4>Gender</h4>
           <label class="col-2">Gender</label>
           <div class="follower col-3">
-            <label for="male">
-              <input type="radio" name="gender" value="male" id="male">
+            <label for="male2">
+              <input type="radio" name="gender" value="male" id="male2">
               Male
             </label>
-            <label for="female">
-              <input type="radio" name="gender" value="female" id="female">
+            <label for="female2">
+              <input type="radio" name="gender" value="female" id="female2">
               Female
             </label>
-            <label for="other">
-              <input type="radio" name="gender" value="other" id="other">
+            <label for="other2">
+              <input type="radio" name="gender" value="other" id="other2">
               Neither of these terms describe me
             </label>
           </div>
         </fieldset>
 
         <fieldset>
-          <legend>Requirements</legend>
           <h4>Dietary Requirements</h4>
           <label class="col-2">Requirements</label>
           <div class="follower col-3">
-            <label for="gluten">
-              <input type="checkbox" name="dietary-requirements" value="gluten" id="gluten">
+            <label for="gluten2">
+              <input type="checkbox" name="dietary-requirements" value="gluten" id="gluten2">
               Gluten allergies
             </label>
-            <label for="lactose">
-              <input type="checkbox" name="dietary-requirements" value="lactose" id="lactose">
+            <label for="lactose2">
+              <input type="checkbox" name="dietary-requirements" value="lactose" id="lactose2">
               Lactose intolerant
             </label>
-            <label for="bananas">
-              <input type="checkbox" name="dietary-requirements" value="other" id="bananas">
+            <label for="bananas2">
+              <input type="checkbox" name="dietary-requirements" value="other" id="bananas2">
               Don't like bananas
             </label>
           </div>
@@ -440,24 +438,24 @@ for (var i = test_strings.length - 1; i >= 0; i--) {
 
         <fieldset>
           <h4>What can we do for you?</h4>
-          <label class="col-2" for="support">Support issue</label>
-          <textarea class="col-3" type="text" name="support" id="support" placeholder="What can we help you with?"></textarea>
+          <label class="col-2" for="support2">Support issue</label>
+          <textarea class="col-3" type="text" name="support" id="support2" placeholder="What can we help you with?"></textarea>
         </fieldset>
 
         <fieldset class="errored">
-          <legend>Error highlighting</legend>
-          <label for="email" class="col-2 errored">Email address</label>
-          <input type="email" name="email" value="" id="email" placeholder="your@email.com" class="col-3 errored">
-          <label for="support" class="col-2 errored">Support issue</label>
-          <textarea type="text" name="support" id="support" placeholder="What can we help you with?" class="col-3 errored"></textarea>
+          <h4>Error highlighting</h4>
+          <label for="email2" class="col-2 errored">Email address</label>
+          <input type="email" name="email" value="" id="email2" placeholder="your@email.com" class="col-3 errored">
+          <label for="support2" class="col-2 errored">Support issue</label>
+          <textarea type="text" name="support" id="support2" placeholder="What can we help you with?" class="col-3 errored"></textarea>
           <label class="col-2 errored">Erroring fields</label>
           <div class="follower col-3">
-            <label for="male" class="errored">
-              <input type="radio" name="gender" value="male" id="male">
+            <label for="male2-error" class="errored">
+              <input type="radio" name="gender" value="male" id="male2-error">
               Male
             </label>
-            <label for="gluten" class="errored">
-              <input type="checkbox" name="dietary-requirements" value="gluten" id="gluten">
+            <label for="gluten2-error" class="errored">
+              <input type="checkbox" name="dietary-requirements" value="gluten" id="gluten2-error">
               Gluten allergies
             </label>
           </div>
@@ -465,8 +463,8 @@ for (var i = test_strings.length - 1; i >= 0; i--) {
 
         <fieldset>
           <h4>What size head do you have?</h4>
-          <label class="col-2" for="headsize">Head size</label>
-          <select class="col-2" name="headsize" id="headsize" onchange="" size="1">
+          <label class="col-2" for="headsize2">Head size</label>
+          <select class="col-2" name="headsize" id="headsize2" onchange="" size="1">
             <option value="option1">Small</option>
             <option value="option2">Medium</option>
             <option value="option2">Large</option>
