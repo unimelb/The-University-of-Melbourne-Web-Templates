@@ -137,6 +137,12 @@ form.wbg {
     text-indent: -999em;
     position: absolute; }
 
+  button,
+  .button,
+  input[type=submit] {
+    float: left;
+    margin-right: 10px; }
+
   /*
 
         Sub-form columns
