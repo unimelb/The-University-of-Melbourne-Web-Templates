@@ -435,7 +435,9 @@ form {
   form textarea {
     min-height: 80px;
     -webkit-appearance: textfield; }
-  form input[type="submit"] {
+  form input[type="submit"],
+  form input[type="radio"],
+  form input[type="checkbox"] {
     min-width: 0px; }
   form input.errored,
   form .errored input,

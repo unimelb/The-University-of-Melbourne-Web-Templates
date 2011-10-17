@@ -72,7 +72,9 @@ form {
   textarea {
     min-height: 80px;
     -webkit-appearance: textfield; }
-  input[type="submit"] {
+  input[type="submit"],
+  input[type="radio"],
+  input[type="checkbox"] {
     min-width: 0px; }
 
   /*  Field error highlighting  */
