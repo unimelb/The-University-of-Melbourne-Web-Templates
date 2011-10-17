@@ -508,6 +508,11 @@ form.wbg {
   form.wbg legend {
     text-indent: -999em;
     position: absolute; }
+  form.wbg button,
+  form.wbg .button,
+  form.wbg input[type=submit] {
+    float: left;
+    margin-right: 10px; }
   form.wbg .col-1,
   form.wbg .col-2,
   form.wbg .col-3,
@@ -1200,6 +1205,13 @@ pre {
 
                       */
 /*  Default  */
+blockquote {
+  border-left: 3px solid #dfe9f4;
+  padding-left: 10px; }
+  blockquote .credit {
+    color: #3e658e;
+    font-style: italic; }
+
 /*  Opinionated  */
 .pullout {
   font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -1212,9 +1224,10 @@ pre {
   font-weight: bold;
   font-size: 20px;
   margin: 20px 0px 20px;
-  padding: 0px;
+  padding: 0px 0px 10px;
   color: #3e658e;
-  background: #dfe9f4 url("../images/quote_marks.png") no-repeat 18px 14px; }
+  background: #dfe9f4 url("../images/quote_marks.png") no-repeat 18px 14px;
+  border: 0px; }
   .pullout p {
     padding: 13px 28px 0px 18px;
     margin: 0px 0px 10px;
