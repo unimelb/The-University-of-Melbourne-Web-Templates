@@ -155,7 +155,8 @@ for (var i = test_strings.length - 1; i >= 0; i--) {
 
       <h2>Table styling</h2>
 
-      <table class="col-6 first">
+      <h3>Standard Table</h3>
+      <table>
         <caption>There are inbuilt styles for tables. Please use this code to ensure you create something that is accessible.</caption>
         <thead>
           <tr>
@@ -207,51 +208,177 @@ for (var i = test_strings.length - 1; i >= 0; i--) {
           </tr>
         </tbody>
       </table>
-      
-      
-      <table class="col-6 first">
-        <caption>Social Media contact points</caption>
+      <hr class="visible">
+
+      <h3>Template-styled Table</h3>
+      <table class="wbg col-6 first">
+        <caption>There are inbuilt styles for tables. Please use this code to ensure you create something that is accessible.</caption>
         <thead>
+          <tr>
             <th scope="col">Contact method</th>
             <th scope="col">Contact details</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
-            <th>Twitter</th>
-            <td><a href="http://www.twitter.com/unimelb">twitter.com/unimelb</a></td>
+            <th scope="row">Contact us</th>
+            <td>For more information please see the <a href="/about-mgm/contact-us.html" title="Contact us">contact us</a> webpage.</td>
           </tr>
           <tr>
-            <th>Facebook</th>
-            <td><a href="http://www.facebook.com/melbuni">facebook.com/melbuni</a></td>
+            <th scope="row">Student centres or faculties</th>
+            <td><a href="/outgoing/advisers/" title="Faculty advisers">Faculty advisors</a>
+            </td>
           </tr>
           <tr>
-            <th>Youtube</th>
-            <td><a href="http://www.youtube.com/unimelb">youtube.com/unimelb</a></td>
+            <th scope="row">Our overseas representatives</th>
+            <td><a href="http://www.mobility.unimelb.edu.au/incoming/planning/representatives.html" title="Overseas representatives">Find a representative in your country</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Download</th>
+            <td>
+              <p>Current study abroad and exchange brochure<br>
+                <a href="/resources/newsletter-sept-zero-eight.pdf" title="Current newsletter for students and advisers" target="_blank">Current newsletter for students and advisors</a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              Additional information:<br>
+              <strong>Study abroad and exchange student support office</strong>
+            </th>
+            <td>
+              See the <a href="http://www.services.unimelb.edu.au/international/saex/" title="Support Office" target="_blank">Support Office</a> for information on:
+              <ul>
+                <li>Arrival and airport reception</li>
+                <li>Melbourne Welcome</li>
+                <li>Enrolment and Orientation</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Student Union</th>
+            <td>
+              <a href="http://union.unimelb.edu.au/" title="The Student Union" target="_blank">The Student Union</a> has a variety of services for students. You might like to check out the <a href="http://union.unimelb.edu.au/clubs" title="Clubs and societies" target="_blank">Clubs and societies</a> (including the Melbourne University Student Exchange Club — MUSEx)
+            </td>
           </tr>
         </tbody>
       </table>
 
-      <h3>Form and message styling</h3>
+      <h2>Form and message styling</h2>
       <p>The following classes have been included to allow you to create attractive forms (and associated messages) with ease. These have been coded in an accessible fashion, so please examine source code to ensure compliance.</p>
+
+      <h3>Form message styles</h3>
+      <p>Lorem ipsum</p>
+      <div class="message">
+        <p>Don't forget to enter your password correctly.</p>
+      </div>
+      <div class="message error">
+        <p>There waz erros.</p>
+        <ul>
+          <li><strong>Username</strong> is required</li>
+          <li><strong>Password</strong> is required</li>
+        </ul>
+      </div>
+      <div class="message alert">
+        <p>Congratulations!</p>
+        <ul>
+          <li><strong>Username</strong> is correct</li>
+          <li><strong>Password</strong> is correct</li>
+        </ul>
+      </div>
+
+      <h3>Standard Form</h3>
+      <p>This represents the standard form styling that will be applied to any form.</p>
       <form>
-        <div class="message">
-          <p>Don't forget to enter your password correctly.</p>
-        </div>
-        <div class="message error">
-          <p>There waz erros.</p>
-          <ul>
-            <li><strong>Username</strong> is required</li>
-            <li><strong>Password</strong> is required</li>
-          </ul>
-        </div>
-        <div class="message alert">
-          <p>Congratulations!</p>
-          <ul>
-            <li><strong>Username</strong> is correct</li>
-            <li><strong>Password</strong> is correct</li>
-          </ul>
-        </div>
-        
+        <fieldset>
+          <legend>Use this form to get in contact with us</legend>
+          <h5>Basic details</h5>
+          <label class="required" for="firstname">First name</label>
+          <input type="text" name="firstname" value="" id="firstname" placeholder="First name">
+          <label for="lastname">Last name</label>
+          <input type="text" name="lastname" value="" id="lastname" placeholder="Last Name">
+          <label for="email">Email address</label>
+          <input type="email" name="email" value="" id="email" placeholder="your@email.com">
+          <p><em>Please enter a valid email address</em></p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Gender</legend>
+          <p>Gender options:</p>
+          <label for="male">
+            <input type="radio" name="gender" value="male" id="male">
+            Male
+          </label>
+          <label for="female">
+            <input type="radio" name="gender" value="female" id="female">
+            Female
+          </label>
+          <label for="other">
+            <input type="radio" name="gender" value="other" id="other">
+            Neither of these terms describe me
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Requirements</legend>
+          <p>Dietary Requirements:</p>
+          <label for="gluten">
+            <input type="checkbox" name="dietary-requirements" value="gluten" id="gluten">
+            Gluten allergies
+          </label>
+          <label for="lactose">
+            <input type="checkbox" name="dietary-requirements" value="lactose" id="lactose">
+            Lactose intolerant
+          </label>
+          <label for="bananas">
+            <input type="checkbox" name="dietary-requirements" value="other" id="bananas">
+            Don't like bananas
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What can we do for you?</legend>
+          <label for="support">Support issue</label>
+          <textarea type="text" name="support" id="support" placeholder="What can we help you with?"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>What size head do you have?</legend>
+          <label for="headsize">Head size</label>
+          <select name="headsize" id="headsize" onchange="" size="1">
+            <option value="option1">Small</option>
+            <option value="option2">Medium</option>
+            <option value="option2">Large</option>
+            <option value="option2">Megamind</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Error highlighting</legend>
+          <label for="email" class="errored">Email address</label>
+          <input type="email" name="email" value="" id="email" placeholder="your@email.com" class="errored">
+          <label for="support" class="errored">Support issue</label>
+          <textarea type="text" name="support" id="support" placeholder="What can we help you with?" class="errored"></textarea>
+          <label for="male" class="errored">
+            <input type="radio" name="gender" value="male" id="male">
+            Male
+          </label>
+          <label for="gluten" class="errored">
+            <input type="checkbox" name="dietary-requirements" value="gluten" id="gluten">
+            Gluten allergies
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <input type="submit" value="Submit">
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+      <hr class="visible">
+
+      <h3>Template-styled Form</h3>
+      <p>Lorem ipsum.</p>
+      <form class="wbg">
         <fieldset>
           <legend>Use this form to get in contact with us</legend>
           <h4>Basic details</h4>
@@ -306,7 +433,26 @@ for (var i = test_strings.length - 1; i >= 0; i--) {
         <fieldset>
           <h4>What can we do for you?</h4>
           <label class="col-2" for="support">Support issue</label>
-          <textarea class="col-3" type="text" name="support" id="support" placeholder="What can we help you with?" cols="20" rows="6"></textarea>
+          <textarea class="col-3" type="text" name="support" id="support" placeholder="What can we help you with?"></textarea>
+        </fieldset>
+
+        <fieldset class="errored">
+          <legend>Error highlighting</legend>
+          <label for="email" class="col-2 errored">Email address</label>
+          <input type="email" name="email" value="" id="email" placeholder="your@email.com" class="col-3 errored">
+          <label for="support" class="col-2 errored">Support issue</label>
+          <textarea type="text" name="support" id="support" placeholder="What can we help you with?" class="col-3 errored"></textarea>
+          <label class="col-2 errored">Erroring fields</label>
+          <div class="follower col-3">
+            <label for="male" class="errored">
+              <input type="radio" name="gender" value="male" id="male">
+              Male
+            </label>
+            <label for="gluten" class="errored">
+              <input type="checkbox" name="dietary-requirements" value="gluten" id="gluten">
+              Gluten allergies
+            </label>
+          </div>
         </fieldset>
 
         <fieldset>
@@ -327,7 +473,9 @@ for (var i = test_strings.length - 1; i >= 0; i--) {
           </div>
         </fieldset>
       </form>
+
     </div>
+
     <div class="aside col-2">
       <div class="nav first" role="navigation">
         <h2>Example Navigation</h2>

@@ -29,7 +29,53 @@ form.wbg input[type=submit] {
 
                             */
 form {
-  
+
+  h4,
+  h5 {
+    margin: 0px; padding: 10px 0px 0px; }
+  legend {
+    @include droid-sans;
+    font-size: 14px;
+    margin: 0px; padding: 18px 0px 3px;
+    font-weight: bold; line-height: 1.2; }
+  p,
+  label {
+    display: block; clear: both;
+    margin: 0px; padding: 3px 0px 2px;
+    line-height: 1.3; vertical-align: baseline; }
+  label {
+    @include droid-sans;
+    font-weight: bold;
+    margin-top: 7px; }
+  p em {
+    color: #777; }
+  input,
+  textarea,
+  select {
+    @include sans-serif;
+    display: block;
+    padding: 5px; margin: 2px 2px 0px 0px;
+    min-width: 40%; max-width: 100%;
+    font-size: 13px; }
+  label input {
+    display: inline;
+    padding: 1px; margin-bottom: 0px; }
+  select {
+    margin: 8px 0px 10px; }
+  textarea {
+    min-height: 80px;
+    -webkit-appearance: textfield; }
+  input[type="submit"] {
+    min-width: 0px; }
+
+  /*  Field error highlighting  */
+  input.errored,
+  .errored input,
+  textarea.errored,
+  .errored textarea {
+    color: #c33; background: #fef0f0; border: 2px solid desaturate(darken(#ffe6e5, 20%), 50%); }
+  .errored {
+    color: #c33; }
 }
 
 /*
@@ -69,25 +115,14 @@ form.wbg {
 
   p,
   label {
-    @include droid-sans;
-    clear: both;
-    font-weight: bold; line-height: 1.3; text-align: right;
-    margin-top: 0px; padding: 5px 0px; }
+    text-align: right; }
 
   fieldset {
     position: relative;
     margin-bottom: 10px; padding: 5px 0px 20px;
     border: 1px solid darken($blockquote, 10%); background: #fafcff; }
-
-  input,
-  textarea,
-  select {
-    padding: 5px; margin: 0px 0px 6px;
-    max-width: 100%; }
-  select {
-    margin-top: 8px; margin-bottom: 8px; }
-  textarea {
-    -webkit-appearance: textfield; }
+  fieldset.errored {
+    border: 1px solid desaturate(darken(#ffe6e5, 20%), 50%); background: #ffe6e5; }
 
   .follower {
     margin: 0px; }
