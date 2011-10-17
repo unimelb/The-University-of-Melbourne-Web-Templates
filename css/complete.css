@@ -536,9 +536,6 @@ form.wbg {
     font-weight: normal; }
   form.wbg .follower input {
     margin: 0px 3px 0px 0px; }
-  form.wbg legend {
-    text-indent: -999em;
-    position: absolute; }
   form.wbg button,
   form.wbg .button,
   form.wbg input[type=submit] {
