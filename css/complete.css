@@ -1155,7 +1155,8 @@ table {
     text-align: left; }
   table td,
   table th {
-    padding: 10px 10px 10px 0px; }
+    padding: 10px 10px 10px 0px;
+    text-align: left; }
 
 /*
 
