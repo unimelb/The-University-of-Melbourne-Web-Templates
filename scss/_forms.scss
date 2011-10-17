@@ -56,7 +56,14 @@ form {
     display: block;
     padding: 5px; margin: 2px 2px 0px 0px;
     min-width: 40%; max-width: 100%;
-    font-size: 13px; }
+    font-size: 13px;
+    &:placeholder {
+      color: #ccc; color: rgba(0, 0, 0, 0.35); }
+    &:-moz-placeholder {
+      color: #ccc; color: rgba(0, 0, 0, 0.35); }
+    &::-webkit-input-placeholder {
+      color: #ccc; color: rgba(0, 0, 0, 0.35); }
+  }
   label input {
     display: inline;
     padding: 1px; margin-bottom: 0px; }

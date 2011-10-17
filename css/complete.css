@@ -411,6 +411,21 @@ form {
     min-width: 40%;
     max-width: 100%;
     font-size: 13px; }
+    form input:placeholder,
+    form textarea:placeholder,
+    form select:placeholder {
+      color: #ccc;
+      color: rgba(0, 0, 0, 0.35); }
+    form input:-moz-placeholder,
+    form textarea:-moz-placeholder,
+    form select:-moz-placeholder {
+      color: #ccc;
+      color: rgba(0, 0, 0, 0.35); }
+    form input::-webkit-input-placeholder,
+    form textarea::-webkit-input-placeholder,
+    form select::-webkit-input-placeholder {
+      color: #ccc;
+      color: rgba(0, 0, 0, 0.35); }
   form label input {
     display: inline;
     padding: 1px;
