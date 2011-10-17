@@ -129,7 +129,12 @@ form.wbg {
     margin-bottom: 10px; padding: 5px 0px 20px;
     border: 1px solid darken($blockquote, 10%); background: #fafcff; }
   fieldset.errored {
-    border: 1px solid desaturate(darken(#ffe6e5, 20%), 50%); background: #ffe6e5; }
+    border: 1px solid desaturate(darken(#ffe6e5, 20%), 50%); background: #ffe6e5;
+    h3,
+    h4 {
+      color: #C33; border-bottom: 1px solid desaturate(darken(#ffe6e5, 20%), 50%); }
+  }
+
     input,
     textarea {
       @include inset-box-shadow(1px, 1px, 2px);

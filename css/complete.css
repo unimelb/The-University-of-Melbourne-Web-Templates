@@ -511,6 +511,10 @@ form.wbg {
   form.wbg fieldset.errored {
     border: 1px solid #dfa19f;
     background: #ffe6e5; }
+    form.wbg fieldset.errored h3,
+    form.wbg fieldset.errored h4 {
+      color: #C33;
+      border-bottom: 1px solid #dfa19f; }
   form.wbg input,
   form.wbg textarea {
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
