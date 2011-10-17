@@ -19,7 +19,6 @@ $column-count: 8;
 $gutter-width: 20px;
 $container-width: 940px + $gutter-width;
 $column-width: ($container-width / $column-count) - $gutter-width;
-$container-id: container;
 $show-grid: false;
 
 @mixin visible_grid {
@@ -54,19 +53,20 @@ $show-grid: false;
 @for $i from 1 through $column-count {
   .col-#{$i} {
     @include column($i); }
-  .col-#{$i}.first {
-    margin-left: 0px; }
 }
 
 @for $i from 1 through $column-count {
-  .push-#{$i},
-  .push-#{$i}.first {
+  .push-#{$i} {
     margin-left: (($column-width + $gutter-width) * $i) + $gutter-width; }
-  .push-#{$i}.first {
-    position: relative; left: -20px; }
+  .push-#{$i}-first {
+    margin-left: (($column-width + $gutter-width) * $i); }
 }
 
-.colborder { padding-right: 9px; margin-right: -11px; border-right: 1px solid #EDEDED; }
+.first {
+  margin-left: 0px; }
+
+.colborder {
+  padding-right: 9px; margin-right: -11px; border-right: 1px solid #EDEDED; }
 
 .wrapper {
   width: $container-width;

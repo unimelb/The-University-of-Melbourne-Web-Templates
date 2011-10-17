@@ -600,17 +600,11 @@ form.wbg {
   display: inline;
   margin-left: 20px; }
 
-.col-1.first {
-  margin-left: 0px; }
-
 .col-2 {
   width: 220px;
   float: left;
   display: inline;
   margin-left: 20px; }
-
-.col-2.first {
-  margin-left: 0px; }
 
 .col-3 {
   width: 340px;
@@ -618,17 +612,11 @@ form.wbg {
   display: inline;
   margin-left: 20px; }
 
-.col-3.first {
-  margin-left: 0px; }
-
 .col-4 {
   width: 460px;
   float: left;
   display: inline;
   margin-left: 20px; }
-
-.col-4.first {
-  margin-left: 0px; }
 
 .col-5 {
   width: 580px;
@@ -636,17 +624,11 @@ form.wbg {
   display: inline;
   margin-left: 20px; }
 
-.col-5.first {
-  margin-left: 0px; }
-
 .col-6 {
   width: 700px;
   float: left;
   display: inline;
   margin-left: 20px; }
-
-.col-6.first {
-  margin-left: 0px; }
 
 .col-7 {
   width: 820px;
@@ -654,81 +636,62 @@ form.wbg {
   display: inline;
   margin-left: 20px; }
 
-.col-7.first {
-  margin-left: 0px; }
-
 .col-8 {
   width: 940px;
   float: left;
   display: inline;
   margin-left: 20px; }
 
-.col-8.first {
-  margin-left: 0px; }
-
-.push-1,
-.push-1.first {
+.push-1 {
   margin-left: 140px; }
 
-.push-1.first {
-  position: relative;
-  left: -20px; }
+.push-1-first {
+  margin-left: 120px; }
 
-.push-2,
-.push-2.first {
+.push-2 {
   margin-left: 260px; }
 
-.push-2.first {
-  position: relative;
-  left: -20px; }
+.push-2-first {
+  margin-left: 240px; }
 
-.push-3,
-.push-3.first {
+.push-3 {
   margin-left: 380px; }
 
-.push-3.first {
-  position: relative;
-  left: -20px; }
+.push-3-first {
+  margin-left: 360px; }
 
-.push-4,
-.push-4.first {
+.push-4 {
   margin-left: 500px; }
 
-.push-4.first {
-  position: relative;
-  left: -20px; }
+.push-4-first {
+  margin-left: 480px; }
 
-.push-5,
-.push-5.first {
+.push-5 {
   margin-left: 620px; }
 
-.push-5.first {
-  position: relative;
-  left: -20px; }
+.push-5-first {
+  margin-left: 600px; }
 
-.push-6,
-.push-6.first {
+.push-6 {
   margin-left: 740px; }
 
-.push-6.first {
-  position: relative;
-  left: -20px; }
+.push-6-first {
+  margin-left: 720px; }
 
-.push-7,
-.push-7.first {
+.push-7 {
   margin-left: 860px; }
 
-.push-7.first {
-  position: relative;
-  left: -20px; }
+.push-7-first {
+  margin-left: 840px; }
 
-.push-8,
-.push-8.first {
+.push-8 {
   margin-left: 980px; }
 
-.push-8.first {
-  position: relative;
-  left: -20px; }
+.push-8-first {
+  margin-left: 960px; }
+
+.first {
+  margin-left: 0px; }
 
 .colborder {
   padding-right: 9px;
