@@ -540,8 +540,8 @@ a.button:visited {
   .current {
     color: $darkbluetext;
     &:before {
-      content: '\002a\0020';
-      position: relative; top: 0.35em; }
+      @include droid-sans;
+      content: '\00b7 \0020'; }
   }
   .current-parent {
     color: lighten($darkbluetext, 7%); }

@@ -1642,9 +1642,8 @@ a.button:visited {
   .nav .current {
     color: #003366; }
     .nav .current:before {
-      content: '\002a\0020';
-      position: relative;
-      top: 0.35em; }
+      font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      content: '\00b7 \0020'; }
   .nav .current-parent {
     color: #00458a; }
   .nav ul li.open,
