@@ -832,9 +832,6 @@ form.wbg {
     word-break: break-word;
     max-width: 97% !important; }
 
-  .headingblock {
-    background-position-y: 40px !important; }
-
   .wrapper .main,
   .wrapper .col-2.aside {
     clear: both;
