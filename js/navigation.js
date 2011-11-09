@@ -86,7 +86,7 @@
     while (parent !== nav) {
       if (parent.nodeName == 'LI') {
         var a = Navigation.findChildrenByTag(parent.childNodes, 'A');
-        a[0].className += ' current-parent';
+        if(a[0]) a[0].className += ' current-parent';
       }
       parent = parent.parentNode;
     }
