@@ -494,6 +494,7 @@ a.button:visited {
     margin: 12px 0px 0px;
     font-size: 14px; font-weight: bold; line-height: 1.3;
     color: darken($darkgrey, 10%); }
+    zoom: 1;
   ul li a {
     display: block;
     color: $navanchorcolour;

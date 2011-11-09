@@ -1574,6 +1574,7 @@ a.button:visited {
   margin-top: 40px;
   margin-bottom: 20px;
   /*  Lists  */
+  zoom: 1;
   /*  Nav Highlighting  */
   /*  Nav more/less links */ }
   .nav > h2 {
