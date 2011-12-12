@@ -206,7 +206,15 @@
   }
   // Injects all the extra elements required by the nested show/hide nav
   function initNestedNav(li) {
-    li.className += ' closed';
+	//Open sub-menu if it is in active-trail, else close it.
+    if(li.childNodes[0].className == 'active-trail current-parent') {
+		li.className += ' open'; 
+		text = 'Less';
+	}
+	else {
+		li.className += ' closed';
+		text = 'More';
+	}
     var ul = Navigation.findChildrenByTag(li.childNodes, 'UL')[0] || li.firstChild,
         a = document.createElement('a'),
         text = document.createTextNode('More');
