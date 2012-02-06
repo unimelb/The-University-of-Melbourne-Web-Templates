@@ -49,7 +49,7 @@ $(function() {
     // Once the image has loaded, we can reference its width and height
     var image = $('#newsbanner .banner img').first();
     // Reset the src to ensure the load event fires
-    image.load(imageLoad).attr('src', image.attr('src'));
+    image.load(imageLoad).attr('src', image.attr('src')+'?'+(+new Date()));
     // Resize the banners on page resize (throttled to run every 50ms)
     $(window).resize( $.throttle(50, resizeBanners) );
   }
