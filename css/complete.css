@@ -1416,6 +1416,49 @@ a.document em {
   letter-spacing: 0px;
   text-transform: lowercase; }
 
+/* these styles add tiny icons to links to some non-html media */
+a[href$=".pdf"],
+a[href$=".doc"],
+a[href$=".xls"],
+a[href$=".ppt"],
+a[href$=".pps"],
+a[href$=".mov"],
+a[href$=".mp3"],
+a[href$=".aif"],
+a[href$=".docx"],
+a[href$=".xlsx"],
+a[href$=".pptx"],
+a[href$=".ppsx"],
+a[href$=".odt"],
+a[href$=".ods"],
+a[href$=".odp"] {
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 14px; }
+
+a[href$=".pdf"] {
+	background-image: url("http://www.unimelb.edu.au/template-assets/07/images/tiny/tiny_pdf_icon.gif"); }
+a[href$=".doc"],
+a[href$=".docx"],
+a[href$=".odt"] {
+	background-image: url("http://www.unimelb.edu.au/template-assets/07/images/tiny/tiny_doc_icon.gif"); }
+a[href$=".xls"],
+a[href$=".xlsx"],
+a[href$=".ods"] {
+	background-image: url("http://www.unimelb.edu.au/template-assets/07/images/tiny/tiny_xls_icon.gif"); }
+a[href$=".ppt"],
+a[href$=".pps"],
+a[href$=".pptx"],
+a[href$=".ppsx"],
+a[href$=".odp"] {
+	background-image: url("http://www.unimelb.edu.au/template-assets/07/images/tiny/tiny_ppt_icon.gif"); }
+a[href$=".mov"] {
+	background-image: url("http://www.unimelb.edu.au/template-assets/07/images/tiny/tiny_mov_icon.gif"); }
+a[href$=".mp3"],
+a[href$=".aif"] {
+	background-image: url("http://www.unimelb.edu.au/template-assets/07/images/tiny/tiny_mp3_icon.gif"); }
+
+
 /*
 
       Non-form button styles
