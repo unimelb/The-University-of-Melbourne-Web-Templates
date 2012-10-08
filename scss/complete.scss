@@ -226,27 +226,25 @@ blockquote {
   ul li a strong {
     color: $uniblue; }
 }
-/*
-.opening-hours {
-  @include sans-serif;
-  margin-top: 10px;
-  color: $blockquotetext; background: $blockquote url("../images/opening_hours.png") no-repeat 12px 12px;
-  font-size: 12px; font-weight: normal;
-  p {
-    padding: 13px 13px 13px 43px;
-    text-indent: 0px; }
-}
-*/
+
 
 .opening-hours {
-  @include sans-serif;
-  margin-top: 10px;
-  color: $blockquotetext; 
-  background: $blockquote;
-  font-size: 12px; font-weight: normal;
-  p {
-    padding: 13px 13px 13px 43px;
-    text-indent: 0px; }
+  .icon-time{
+    float:left;
+    display:inline-block;
+    padding:5px 0px;
+    font-size:40px;
+
+  }
+
+    @include sans-serif;
+    margin-top: 10px;
+    color: $blockquotetext; 
+    background: $blockquote;
+    font-size: 12px; font-weight: normal;
+    p {
+      padding: 13px 13px 13px 43px;
+      text-indent: 0px; }
 }
 
 

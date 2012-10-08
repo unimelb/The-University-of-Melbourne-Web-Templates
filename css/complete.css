@@ -2585,17 +2585,6 @@ blockquote {
   .pullout ul li a strong {
     color: #003366; }
 
-/*
-.opening-hours {
-  @include sans-serif;
-  margin-top: 10px;
-  color: $blockquotetext; background: $blockquote url("../images/opening_hours.png") no-repeat 12px 12px;
-  font-size: 12px; font-weight: normal;
-  p {
-    padding: 13px 13px 13px 43px;
-    text-indent: 0px; }
-}
-*/
 .opening-hours {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-top: 10px;
@@ -2603,6 +2592,11 @@ blockquote {
   background: #dfe9f4;
   font-size: 12px;
   font-weight: normal; }
+  .opening-hours .icon-time {
+    float: left;
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 40px; }
   .opening-hours p {
     padding: 13px 13px 13px 43px;
     text-indent: 0px; }
