@@ -6,6 +6,10 @@
 @import "fontface";
 @import "forms";
 
+/*  Font Awesome  */
+@import "font-awesome";
+@import "font-awesome-ie7";
+
 /*  Grid system  */
 @import "grid";
 
@@ -222,11 +226,23 @@ blockquote {
   ul li a strong {
     color: $uniblue; }
 }
-
+/*
 .opening-hours {
   @include sans-serif;
   margin-top: 10px;
   color: $blockquotetext; background: $blockquote url("../images/opening_hours.png") no-repeat 12px 12px;
+  font-size: 12px; font-weight: normal;
+  p {
+    padding: 13px 13px 13px 43px;
+    text-indent: 0px; }
+}
+*/
+
+.opening-hours {
+  @include sans-serif;
+  margin-top: 10px;
+  color: $blockquotetext; 
+  background: $blockquote;
   font-size: 12px; font-weight: normal;
   p {
     padding: 13px 13px 13px 43px;
@@ -627,12 +643,12 @@ a.button:visited {
   a.twitter {
     @include border-radius;
     float: left;
-    padding: 3px 9px 3px 36px; margin: 6px 2px 0px;
+    padding: 3px 9px 3px 9px; margin: 6px 2px 0px;
     color: $lightgrey; background-color: $darkgrey;
     text-decoration: none; }
 }
 
-  a.facebook{
+  a.facebook, a.twitter{
     background: none ;
   }
 
