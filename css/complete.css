@@ -3098,17 +3098,29 @@ a.button:visited {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -o-border-radius: 3px;
+    background: none;
     float: left;
-    padding: 3px 9px 3px 9px;
-    margin: 6px 2px 0px;
+    padding: 3px;
+    margin: 2px;
     color: #f2f2f2;
     background-color: #686868;
     text-decoration: none; }
+    .footer a.facebook .icon-facebook-sign, .footer a.facebook .icon-twitter,
+    .footer a.twitter .icon-facebook-sign,
+    .footer a.twitter .icon-twitter {
+      float: left;
+      display: inline-block;
+      font-size: 25px;
+      margin: 8px 2px 2px; }
+    .footer a.facebook span,
+    .footer a.twitter span {
+      float: left;
+      display: inline-block;
+      border-left: 1px #f2f2f2 solid;
+      margin: 2px;
+      padding: 2px 8px; }
 
-a.facebook, a.twitter {
-  background: none; }
-
-/*
+  /*
 
       Newsbannners
 

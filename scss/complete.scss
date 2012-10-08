@@ -234,9 +234,7 @@ blockquote {
     display:inline-block;
     padding:5px 0px;
     font-size:40px;
-
   }
-
     @include sans-serif;
     margin-top: 10px;
     color: $blockquotetext; 
@@ -640,17 +638,36 @@ a.button:visited {
   a.facebook,
   a.twitter {
     @include border-radius;
-    float: left;
-    padding: 3px 9px 3px 9px; margin: 6px 2px 0px;
-    color: $lightgrey; background-color: $darkgrey;
-    text-decoration: none; }
-}
-
-  a.facebook, a.twitter{
     background: none ;
+    float: left;
+    padding:3px;
+    margin:2px;
+    color: $lightgrey; 
+    background-color: $darkgrey;
+    text-decoration: none; 
+    
+    .icon-facebook-sign, .icon-twitter{
+      float: left;
+      display: inline-block;
+      font-size: 25px;
+      margin: 8px 2px 2px;
+
+      
+    }
+
+    span{
+      float:left;
+      display:inline-block;
+      border-left: 1px $lightgrey solid;
+      margin: 2px;
+      padding:2px 8px;
+    }
+
   }
 
-/*
+}
+
+  /*
 
       Newsbannners
 
